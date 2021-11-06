@@ -1,0 +1,71 @@
+@import "fonts.scss";
+.topPage{
+  width: 100%;
+  .navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+position: absolute;
+    margin-top: 77px;
+.navbarLogo{
+
+  font-family: $font;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 190%;
+  color: #FFFFFF;
+}
+.navbar-menu
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .imgNavbar{
+    width: 20px;
+    height: 20px;
+    margin-right: 20px;
+  }
+  .navbarButtonMenu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 160px;
+    height: 50px;
+    background: #00C9E0;
+    box-shadow: 5px 15px 40px rgba(0, 201, 224, 0.2);
+    border-radius: 48px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-family: Larsseit Regular;
+    color: #FFFFFF
+
+  }
+}
+
+  }
+  .topImg {
+width: 100%;
+    height: auto;
+  }
+  .TextTop{
+width: 700px;
+ position: absolute;
+    left: 26.74%;
+    right: 34.74%;
+    top: 25.89%;
+    bottom: 92.57%;
+    font-family: $font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 120px;
+    line-height: 153px;
+    letter-spacing: -0.02em;
+
+    color: #FFFFFF
+  }
+}
