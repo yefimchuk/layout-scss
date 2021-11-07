@@ -1,12 +1,17 @@
 @import url("http://fonts.cdnfonts.com/css/noe-display");
+::-webkit-scrollbar {
+  width: 0; }
+
 .topPage {
+  background: url("img/topImg.png") 50%/cover no-repeat;
+  height: 1100px;
   width: 100%; }
   .topPage .navbar {
+    width: 90%;
+    height: 150px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    position: absolute;
-    margin-top: 77px; }
+    align-items: center; }
     .topPage .navbar .navbarLogo {
       font-family: "Noe Display", sans-serif;
       font-style: normal;
@@ -39,22 +44,184 @@
         text-transform: uppercase;
         font-family: Larsseit Regular;
         color: #FFFFFF; }
-  .topPage .topImg {
-    width: 100%;
-    height: auto; }
   .topPage .TextTop {
-    width: 700px;
-    position: absolute;
-    left: 26.74%;
-    right: 34.74%;
-    top: 25.89%;
-    bottom: 92.57%;
-    font-family: "Noe Display", sans-serif;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 120px;
-    line-height: 153px;
-    letter-spacing: -0.02em;
-    color: #FFFFFF; }
+    margin-top: 100px;
+    width: 100%;
+    height: 300px; }
+    .topPage .TextTop .TextTop1 {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Noe Display", sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 120px;
+      line-height: 153px;
+      letter-spacing: -0.02em;
+      color: #FFFFFF; }
+    .topPage .TextTop .TextTop2 {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      font-family: "Larsseit Regular";
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 24px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #FFFFFF;
+      padding: 25px; }
+    .topPage .TextTop .TextTop3 {
+      width: 100%;
+      font-family: Larsseit;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 17px;
+      line-height: 150%;
+      text-align: center;
+      color: #FFFFFF; }
+  .topPage .contact {
+    width: 90%;
+    height: 200px;
+    margin-top: 200px; }
+    .topPage .contact .scroll {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
+      .topPage .contact .scroll .scrollText {
+        font-family: Larsseit;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 190%;
+        /* or 28px */
+        letter-spacing: 0.05em;
+        color: #FFFFFF;
+        opacity: 0.9;
+        transform: rotate(-90deg); }
+      .topPage .contact .scroll .scrollArrow {
+        margin-top: 25px;
+        width: 2px;
+        height: 80px;
+        background: linear-gradient(180deg, #09F4F4 0%, #00C9E0 100%);
+        border-radius: 13px; }
+    .topPage .contact .contactIcons {
+      width: 22px;
+      height: 18px; }
+      .topPage .contact .contactIcons .iconCont {
+        margin-top: 10px; }
+  .topPage .navGrad {
+    height: 157px;
+    width: 100%;
+    background: linear-gradient(180deg, rgba(1, 22, 39, 0) 0%, #011627 76.64%, #011627 100%); }
+
+.PickTrip {
+  width: 100%;
+  height: 3200px;
+  border: 0px; }
+  .PickTrip .bg-light {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    width: 100%;
+    background: url("img/bgLight.png") 0 0/cover no-repeat;
+    background-color: #011627 !important; }
+    .PickTrip .bg-light .wrapperPick {
+      width: 70%;
+      height: 1000px;
+      margin-top: 100px; }
+      .PickTrip .bg-light .wrapperPick .pickText {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .PickTrip .bg-light .wrapperPick .pickText .pickText1 {
+          font-family: Noe Display;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 72px;
+          line-height: 110%;
+          /* or 79px */
+          text-align: center;
+          letter-spacing: -0.02em;
+          color: #FFFFFF; }
+        .PickTrip .bg-light .wrapperPick .pickText .pickText2 {
+          height: 22px;
+          width: 22px;
+          margin: 10px;
+          border-radius: 0px; }
+        .PickTrip .bg-light .wrapperPick .pickText .pickText3 {
+          font-family: Larsseit;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 150%;
+          /* or 24px */
+          letter-spacing: -0.02em;
+          color: #FFFFFF; }
+
+.tab-content {
+  margin-top: 100px;
+  background-color: red; }
+
+.nav-tabs {
+  border: 0px; }
+
+.nav-tabs .nav-link {
+  width: 100%; }
+
+.ul_1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 70px; }
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  width: 100%;
+  height: 60px;
+  border: 0px;
+  background: rgba(0, 0, 0, 0);
+  border-bottom: 4px solid #41EAD4 !important;
+  font-family: Larsseit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 200%;
+  opacity: 1;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #41EAD4; }
+
+.ul_1 {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px !important;
+  font-family: Larsseit;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 110%;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #FFFFFF;
+  opacity: 0.5;
+  border-bottom: 1px solid white !important;
+  transition: .1s linear; }
+  .ul_1:hover {
+    color: white;
+    opacity: 1; }
+
+.ul_2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%; }
 
 /*# sourceMappingURL=style.css.map */
