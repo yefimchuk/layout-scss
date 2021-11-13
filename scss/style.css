@@ -704,12 +704,93 @@
   top: 100px; }
 
 @media (max-width: 550px) {
+  .TextTop {
+    width: 90% !important; }
+
   .TextTop1 {
     font-size: 60px !important;
     line-height: 60px !important; }
 
   .TextTop2 {
     font-size: 16px !important;
-    text-align: center; } }
+    text-align: center; }
+
+  .navGrad {
+    position: relative;
+    top: 5px; }
+
+  .pickText {
+    display: flex;
+    flex-direction: column; }
+
+  .pickText1 {
+    font-size: 35px !important; }
+
+  .contactFlex {
+    width: 90% !important; }
+
+  .scroll {
+    position: relative;
+    right: 20px;
+    bottom: 5px; }
+
+  .pickText {
+    position: relative;
+    bottom: 50px; }
+
+  .pickText3 {
+    text-align: center; }
+
+  .tabContent {
+    display: flex;
+    flex-direction: column !important; }
+
+  .wrapperPick {
+    width: 90% !important;
+    flex-wrap: nowrap; }
+
+  .ul_1 {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    flex-wrap: inherit; }
+
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    flex-wrap: inherit; }
+
+  .ul_2 {
+    height: 60px;
+    width: 100%;
+    white-space: normal; }
+
+  .tabContent {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+  .TabLeft {
+    width: 75% !important; }
+
+  .tabPhoto {
+    width: 100% !important; }
+
+  .numTab {
+    right: 50px !important; }
+
+  .TabRight {
+    margin-top: 100px;
+    width: 100% !important;
+    height: 900px !important; }
+
+  .tabText1 {
+    font-size: 35px !important; }
+
+  .tabButtonRight {
+    margin-left: 0% !important; } }
 
 /*# sourceMappingURL=style.css.map */
