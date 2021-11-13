@@ -2,6 +2,9 @@
 ::-webkit-scrollbar {
   width: 0; }
 
+body {
+  overflow-x: hidden; }
+
 .topPage {
   background: url("img/topImg.png") 50%/cover no-repeat;
   height: 1100px;
@@ -471,11 +474,17 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center; }
+    .aboutUsPhotosFlex .aboutUsPhotosFlex1 .aboutUsImg {
+      width: 100%;
+      height: auto; }
   .aboutUsPhotosFlex .aboutUsPhotosFlex2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center; }
+    .aboutUsPhotosFlex .aboutUsPhotosFlex2 .aboutUsImg {
+      width: 100%;
+      height: auto; }
 
 .thoughtsPeople {
   width: 85%;
@@ -562,7 +571,7 @@
           color: #FFFFFF; }
         .thoughtsPeople .thoughtsPeopleBlocks .thoughtsPeopleBlocksRow .reviewsBlock .reviewsBlockAvatar {
           width: 80%;
-          margin-top: 25px; }
+          margin: 25px; }
           .thoughtsPeople .thoughtsPeopleBlocks .thoughtsPeopleBlocksRow .reviewsBlock .reviewsBlockAvatar .reviewsBlockName .reviewsName {
             margin-left: 20px;
             width: 210px;
@@ -724,7 +733,7 @@
     flex-direction: column; }
 
   .pickText1 {
-    font-size: 35px !important; }
+    font-size: 40px !important; }
 
   .contactFlex {
     width: 90% !important; }
@@ -783,14 +792,74 @@
     right: 50px !important; }
 
   .TabRight {
-    margin-top: 100px;
     width: 100% !important;
-    height: 900px !important; }
+    height: 800px !important; }
 
   .tabText1 {
-    font-size: 35px !important; }
+    margin-top: 150px;
+    font-size: 40px !important; }
 
   .tabButtonRight {
-    margin-left: 0% !important; } }
+    margin-left: 0% !important; }
+
+  .aboutUsText1 {
+    font-size: 45px !important; }
+
+  .aboutUsG {
+    display: flex;
+    justify-content: center;
+    flex-direction: column !important;
+    align-items: center; }
+
+  .aboutUsText {
+    width: 90% !important; }
+
+  .aboutUsText {
+    align-items: center !important; }
+
+  .aboutUsPhotos {
+    position: relative;
+    bottom: 100px;
+    width: 110% !important; }
+
+  .PickTrip {
+    height: 5500px !important; }
+
+  .thoughtsPeopleText1 {
+    font-size: 40px !important; }
+
+  .thoughtsPeopleText2 {
+    margin-top: 10px;
+    font-size: 15px !important; }
+
+  .thoughtsPeopleBlocksRow {
+    flex-direction: column !important; }
+
+  .shareIT0 {
+    position: relative;
+    left: 150px;
+    top: 50px; }
+
+  .reviewsBlock {
+    height: 100% !important;
+    width: 90% !important; }
+
+  .wrapperAboutUsG {
+    margin-top: 50px !important; }
+
+  .thoughtsPeople {
+    margin-top: 0px;
+    width: 90% !important;
+    height: auto !important; }
+    .thoughtsPeople .thoughtsPeopleFlex {
+      height: 100% !important; }
+      .thoughtsPeople .thoughtsPeopleFlex .thoughtsPeopleText {
+        height: 10% !important; }
+      .thoughtsPeople .thoughtsPeopleFlex .thoughtsPeopleBlocks {
+        height: 90% !important; }
+
+  .reviewsName {
+    height: auto;
+    width: 100% !important; } }
 
 /*# sourceMappingURL=style.css.map */

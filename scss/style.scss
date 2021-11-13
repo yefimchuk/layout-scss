@@ -1,5 +1,10 @@
 @import "fonts.scss";
 @import "impotant.scss";
+@import "impotant.scss";
+body{
+  overflow-x: hidden
+}
+
 .topPage{
   background: url('img/topImg.png') 50%/cover no-repeat;
   height: 1100px;
@@ -630,6 +635,10 @@ position: relative;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    .aboutUsImg{
+      width: 100%;
+      height: auto;
+    }
   }
 
   .aboutUsPhotosFlex2 {
@@ -637,6 +646,10 @@ position: relative;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    .aboutUsImg{
+      width: 100%;
+      height: auto;
+    }
   }
 }
 
@@ -752,7 +765,7 @@ position: relative;
 
         .reviewsBlockAvatar {
           width: 80%;
-          margin-top: 25px;
+          margin: 25px;
 
           .reviewsBlockName {
             .reviewsName {
@@ -959,7 +972,7 @@ width: 127px;
     flex-direction: column;
   }
   .pickText1 {
-    font-size: 35px !important;
+    font-size: 40px !important;
   }
   .contactFlex{
     width: 90% !important;
@@ -1022,14 +1035,84 @@ height: 60px;
     right: 50px!important;
   }
   .TabRight{
-    margin-top: 100px;
+
     width: 100%!important;
-    height: 900px!important;
+    height: 800px!important;
   }
 .tabText1{
-  font-size: 35px!important;
+  margin-top: 150px;
+  font-size: 40px!important;
 }
   .tabButtonRight{
     margin-left: 0% !important;
+  }
+  .aboutUsText1{
+    font-size: 45px!important;
+  }
+  .aboutUsG{
+    display: flex;
+    justify-content: center;
+    flex-direction: column!important;
+    align-items: center;
+  }
+  .aboutUsText{
+    width: 90% !important;
+  }
+  .aboutUsText {
+
+    align-items: center!important;
+  }
+  .aboutUsPhotos{
+    position: relative;
+    bottom: 100px;
+
+    width: 110% !important;
+  }
+  .PickTrip{
+    height: 5500px!important;
+  }
+
+  .thoughtsPeopleText1{
+    font-size: 40px!important;
+  }
+  .thoughtsPeopleText2{
+    margin-top: 10px;
+    font-size: 15px!important;
+  }
+  .thoughtsPeopleBlocksRow{
+    flex-direction:column!important;
+  }
+  .shareIT0{
+    position: relative;
+    left: 150px;
+    top: 50px;
+  }
+  .reviewsBlock{
+    height: 100%!important;
+    width: 90% !important;
+  }
+  .wrapperAboutUsG{
+    margin-top: 50px!important;
+  }
+
+  .thoughtsPeople{
+    margin-top: 0px;
+    width: 90% !important;
+    height: auto!important;
+    .thoughtsPeopleFlex{
+      height: 100%!important;
+      .thoughtsPeopleText{
+
+        height: 10% !important;
+      }
+      .thoughtsPeopleBlocks{
+        height: 90% !important;
+      }
+    }
+  }
+
+  .reviewsName{
+    height: auto;
+    width: 100% !important;
   }
 }
