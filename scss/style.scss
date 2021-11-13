@@ -1115,4 +1115,31 @@ height: 60px;
     height: auto;
     width: 100% !important;
   }
+  .seeText1{
+    margin-top: 100px;
+    font-size: 40px!important;
+  }
+  .seeText2{
+    width: 90% !important;
+    margin-top: 100px;
+    font-size: 20px!important;
+  }
+  .footer{
+    height: 1500px;
+    .footerFlex1{
+      justify-content: center!important;
+      align-items: center!important;
+text-align: center;
+      flex-direction: column!important;
+      .footerFlex{
+        margin-top: 20px;
+      }
+    }
+  }
+  .navbarLogo{
+    bottom: 350px;
+  }
+  .copyright{
+    bottom: 250px!important;
+  }
 }
