@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Larsseit';
+  src: url('../fonts/Larsseit.eot');
+  src: local('☺'), url('../fonts/Larsseit.woff') format('woff'), url('../fonts/Larsseit.ttf') format('truetype'), url('../fonts/Larsseit.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -111,7 +119,7 @@ position: relative;
         line-height: 21px;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        font-family: $font2 Regular;
+        font-family: Larsseit;
         color: #FFFFFF
 
       }
@@ -146,7 +154,7 @@ position: relative;
       display: flex;
       justify-content: center;
       width: 100%;
-      font-family: $font2 ;
+      font-family: Larsseit;
       font-style: normal;
       font-weight: bold;
       font-size: 18px;
@@ -159,7 +167,7 @@ position: relative;
 
     .TextTop3 {
       width: 100%;
-      font-family: $font2;
+      font-family: Larsseit;
       font-style: normal;
       font-weight: normal;
       font-size: 17px;
@@ -182,7 +190,7 @@ position: relative;
       align-items: center;
 
       .scrollText {
-        font-family: $font2;
+        font-family: Larsseit;
         font-style: normal;
         font-weight: bold;
         font-size: 15px;
@@ -281,7 +289,7 @@ position: relative;
         }
 
         .pickText3 {
-          font-family: $font2;
+          font-family: Larsseit;
           font-style: normal;
           font-weight: normal;
           font-size: 16px;
@@ -325,7 +333,7 @@ position: relative;
   border: 0px;
   background: rgba(0, 0, 0, 0);
   border-bottom: 4px solid #41EAD4!important;
-  font-family: $font2;
+  font-family: Larsseit;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -344,7 +352,7 @@ position: relative;
   justify-content: center;
   align-items: center;
   border: 0px !important;
-  font-family: $font2;
+  font-family: Larsseit;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -457,7 +465,7 @@ position: relative;
       }
 
       .numTab2 {
-        font-family: $font2;
+        font-family: Larsseit;
         font-style: normal;
         font-weight: 800;
         font-size: 24px;
@@ -471,7 +479,7 @@ position: relative;
 
       .numTab3 {
         width: 250px;
-        font-family: $font2;
+        font-family: Larsseit;
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
@@ -509,7 +517,7 @@ position: relative;
     }
 
     .tabText2 {
-      font-family: $font2;
+      font-family: Larsseit;
       font-style: normal;
       font-weight: 700;
       font-size: 17px;
@@ -522,7 +530,7 @@ position: relative;
     }
 
     .tabText3 {
-      font-family: $font2;
+      font-family: Larsseit;
       font-style: normal;
       font-weight: 400;
       font-size: 17px;
@@ -546,7 +554,7 @@ position: relative;
       border-radius: 183px;
       margin-top: 40px;
       margin-left: 6%;
-      font-family: $font2;
+      font-family: Larsseit;
       font-style: normal;
       font-weight: bold;
       font-size: 14px;
@@ -626,7 +634,7 @@ position: relative;
           }
 
           .aboutUsText2 {
-            font-family:  $font2 ;
+            font-family:  Larsseit;
             font-size: 18px;
             font-weight: 700;
             line-height: 27px;
@@ -637,7 +645,7 @@ position: relative;
           }
 
           .aboutUsText3 {
-            font-family:  $font2;
+            font-family:  Larsseit;
             font-weight: 300;
             margin-top: 17px;
 
@@ -649,7 +657,7 @@ position: relative;
 
           .aboutUsButton {
             margin-top: 50px;
-            font-family:  $font2;
+            font-family:  Larsseit;
             font-style: normal;
             font-weight: bold;
             font-size: 14px;
@@ -747,7 +755,7 @@ position: relative;
       }
 
       .thoughtsPeopleText2 {
-        font-family: $font2;
+        font-family: Larsseit;
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
@@ -794,7 +802,7 @@ position: relative;
 
         .reviewsBlockText1 {
           width: 80%;
-          font-family: $font2;
+          font-family: Larsseit;
           font-style: normal;
           font-weight: 700;
           font-size: 18px;
@@ -806,7 +814,7 @@ position: relative;
         .reviewsBlockText2 {
           margin-top: 20px;
           width: 80%;
-          font-family:  $font2;
+          font-family:  Larsseit;
           font-style: normal;
           font-weight: 300;
           font-size: 18px;
@@ -824,7 +832,7 @@ position: relative;
               margin-left: 20px;
               width: 210px;
               display: flex;
-              font-family:  $font2;
+              font-family:  Larsseit;
               font-style: normal;
               font-weight: bold;
               font-size: 12px;
@@ -870,7 +878,7 @@ position: relative;
   .seeText2 {
     margin-top: 20px;
     width: 388px;
-    font-family:  $font2;
+    font-family:  Larsseit;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -919,7 +927,7 @@ margin-bottom: 100px;
 
     .footerFlex {
       .footerText2 {
-        font-family:  $font2;
+        font-family:  Larsseit;
         font-style: normal;
         font-weight: bold;
         font-size: 18px;
@@ -933,7 +941,7 @@ margin-bottom: 100px;
       }
       .footerText3{
         margin-top: 15px;
-        font-family:  $font2;
+        font-family:  Larsseit;
         font-style: normal;
         font-weight: normal;
         font-size: 15px;
@@ -969,7 +977,7 @@ position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family:  $font2;
+  font-family:  Larsseit;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -994,7 +1002,7 @@ position: relative;
 }
 .shareIT{
   margin-bottom: 20px;
-  font-family:  $font2;
+  font-family:  Larsseit;
   font-style: normal;
   font-weight: bold;
   font-size: 15px;
