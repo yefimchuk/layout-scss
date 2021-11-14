@@ -124,7 +124,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: 'Noe Display', serif;
+      font-family: 'Noe Display', sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 120px;
