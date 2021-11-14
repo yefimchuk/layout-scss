@@ -5,60 +5,8 @@
   font-weight: normal;
   font-style: normal;
 }
-
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  font-family: inherit;
-  vertical-align: baseline;
-}
-* {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-/* remember to define focus styles! */
-:focus {
-  outline: 0;
-}
-body {
-  line-height: 1;
-  color: black;
-  background: white;
-}
-ol, ul {
-  list-style: none;
-}
-/* tables still need 'cellspacing="0"' in the markup */
-table {
-  border-collapse: separate;
-  border-spacing: 0;
-}
-caption, th, td {
-  text-align: left;
-  font-weight: normal;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: "";
-}
-blockquote, q {
-  quotes: "" "";
-}
-@import "fonts.scss";
+@import url('http://fonts.cdnfonts.com/css/noe-display');
+@import "nullstyle.scss";
 @import "impotant.scss";
 @import "impotant.scss";
 body{
@@ -84,8 +32,8 @@ display: flex;
     .navbarLogo {
 position: relative;
       top: 0px;
+      font-family: 'Noe Display', sans-serif;
 
-      font-family: $font;
       font-style: normal;
       font-weight: bold;
       font-size: 36px;
@@ -119,7 +67,7 @@ position: relative;
         line-height: 21px;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        font-family: Larsseit;
+        font-family: 'Larsseit', sans-serif;
         color: #FFFFFF
 
       }
@@ -139,7 +87,8 @@ position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
-    font-family:  Noe Display;
+      font-family: 'Noe Display', sans-serif;
+
       font-style: normal;
       font-weight: bold;
       font-size: 120px;
@@ -154,7 +103,7 @@ position: relative;
       display: flex;
       justify-content: center;
       width: 100%;
-      font-family: Larsseit;
+      font-family: 'Larsseit';
       font-style: normal;
       font-weight: bold;
       font-size: 18px;
@@ -167,7 +116,7 @@ position: relative;
 
     .TextTop3 {
       width: 100%;
-      font-family: Larsseit;
+      font-family: 'Larsseit';
       font-style: normal;
       font-weight: normal;
       font-size: 17px;
@@ -190,7 +139,7 @@ position: relative;
       align-items: center;
 
       .scrollText {
-        font-family: Larsseit;
+        font-family: 'Larsseit';
         font-style: normal;
         font-weight: bold;
         font-size: 15px;
@@ -266,7 +215,8 @@ position: relative;
         align-items: center;
 
         .pickText1 {
-          font-family: Noe Display;
+          font-family: 'Noe Display', sans-serif;
+
           font-style: normal;
           font-weight: bold;
           font-size: 72px;
@@ -289,7 +239,7 @@ position: relative;
         }
 
         .pickText3 {
-          font-family: Larsseit;
+          font-family: 'Larsseit';
           font-style: normal;
           font-weight: normal;
           font-size: 16px;
@@ -333,7 +283,7 @@ position: relative;
   border: 0px;
   background: rgba(0, 0, 0, 0);
   border-bottom: 4px solid #41EAD4!important;
-  font-family: Larsseit;
+  font-family: 'Larsseit';
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -352,7 +302,7 @@ position: relative;
   justify-content: center;
   align-items: center;
   border: 0px !important;
-  font-family: Larsseit;
+  font-family: 'Larsseit';
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -465,7 +415,7 @@ position: relative;
       }
 
       .numTab2 {
-        font-family: Larsseit;
+        font-family: 'Larsseit';
         font-style: normal;
         font-weight: 800;
         font-size: 24px;
@@ -479,7 +429,7 @@ position: relative;
 
       .numTab3 {
         width: 250px;
-        font-family: Larsseit;
+        font-family: 'Larsseit';
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
@@ -505,7 +455,8 @@ position: relative;
 
     .tabText1 {
 
-      font-family: Noe Display;
+      font-family: 'Noe Display', sans-serif;
+
       font-style: normal;
       font-weight: bold;
       font-size: 65px;
@@ -517,7 +468,7 @@ position: relative;
     }
 
     .tabText2 {
-      font-family: Larsseit;
+      font-family: 'Larsseit';
       font-style: normal;
       font-weight: 700;
       font-size: 17px;
@@ -530,7 +481,7 @@ position: relative;
     }
 
     .tabText3 {
-      font-family: Larsseit;
+      font-family: 'Larsseit';
       font-style: normal;
       font-weight: 400;
       font-size: 17px;
@@ -554,7 +505,7 @@ position: relative;
       border-radius: 183px;
       margin-top: 40px;
       margin-left: 6%;
-      font-family: Larsseit;
+      font-family: 'Larsseit';
       font-style: normal;
       font-weight: bold;
       font-size: 14px;
@@ -622,7 +573,9 @@ position: relative;
           align-items: flex-start;
 
           .aboutUsText1 {
-            font-family: $font;
+            font-family: 'Noe Display', sans-serif;
+
+
             font-style: normal;
             font-weight: bold;
             font-size: 72px;
@@ -634,7 +587,7 @@ position: relative;
           }
 
           .aboutUsText2 {
-            font-family:  Larsseit;
+            font-family:  'Larsseit';
             font-size: 18px;
             font-weight: 700;
             line-height: 27px;
@@ -645,7 +598,7 @@ position: relative;
           }
 
           .aboutUsText3 {
-            font-family:  Larsseit;
+            font-family:  'Larsseit';
             font-weight: 300;
             margin-top: 17px;
 
@@ -657,7 +610,7 @@ position: relative;
 
           .aboutUsButton {
             margin-top: 50px;
-            font-family:  Larsseit;
+            font-family:  'Larsseit';
             font-style: normal;
             font-weight: bold;
             font-size: 14px;
@@ -741,7 +694,8 @@ position: relative;
 
 
       .thoughtsPeopleText1 {
-        font-family: Noe Display;
+        font-family: 'Noe Display', sans-serif;
+
         font-style: normal;
         font-weight: bold;
         font-size: 72px;
@@ -755,7 +709,7 @@ position: relative;
       }
 
       .thoughtsPeopleText2 {
-        font-family: Larsseit;
+        font-family: 'Larsseit';
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
@@ -802,7 +756,7 @@ position: relative;
 
         .reviewsBlockText1 {
           width: 80%;
-          font-family: Larsseit;
+          font-family: 'Larsseit';
           font-style: normal;
           font-weight: 700;
           font-size: 18px;
@@ -814,7 +768,7 @@ position: relative;
         .reviewsBlockText2 {
           margin-top: 20px;
           width: 80%;
-          font-family:  Larsseit;
+          font-family:  'Larsseit';
           font-style: normal;
           font-weight: 300;
           font-size: 18px;
@@ -861,7 +815,8 @@ position: relative;
   align-items: center;
 
   .seeText1 {
-    font-family: Noe Display;
+    font-family: 'Noe Display', sans-serif;
+
     font-style: normal;
     font-weight: bold;
     font-size: 72px;
@@ -878,7 +833,7 @@ position: relative;
   .seeText2 {
     margin-top: 20px;
     width: 388px;
-    font-family:  Larsseit;
+    font-family:  'Larsseit';
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -927,7 +882,7 @@ margin-bottom: 100px;
 
     .footerFlex {
       .footerText2 {
-        font-family:  Larsseit;
+        font-family:  'Larsseit';
         font-style: normal;
         font-weight: bold;
         font-size: 18px;
@@ -941,7 +896,7 @@ margin-bottom: 100px;
       }
       .footerText3{
         margin-top: 15px;
-        font-family:  Larsseit;
+        font-family:  'Larsseit';
         font-style: normal;
         font-weight: normal;
         font-size: 15px;
@@ -977,7 +932,7 @@ position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family:  Larsseit;
+  font-family:  'Larsseit';
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -989,7 +944,7 @@ position: relative;
   color: #FFFFFF;
 }
 .navbarLogo{
-  font-family: Playfair Display;
+  font-family: 'Noe Display', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -1002,7 +957,7 @@ position: relative;
 }
 .shareIT{
   margin-bottom: 20px;
-  font-family:  Larsseit;
+  font-family:  "Larsseit";
   font-style: normal;
   font-weight: bold;
   font-size: 15px;

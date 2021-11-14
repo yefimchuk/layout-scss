@@ -6,59 +6,63 @@
   src: local("☺"), url("../fonts/Larsseit.woff") format("woff"), url("../fonts/Larsseit.ttf") format("truetype"), url("../fonts/Larsseit.svg") format("svg");
   font-weight: normal;
   font-style: normal; }
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, font, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-weight: inherit;
-  font-style: inherit;
-  font-size: 100%;
-  font-family: inherit;
-  vertical-align: baseline; }
-
 * {
-  -webkit-box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+*, *:before, *:after {
   -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* remember to define focus styles! */
-:focus {
-  outline: 0; }
+:focus, :active {
+  outline: none; }
 
-body {
+a:focus, a:active {
+  outline: none; }
+
+nav, footer, header, aside {
+  display: block; }
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
   line-height: 1;
-  color: black;
-  background: white; }
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%; }
 
-ol, ul {
+input, button, textarea {
+  font-family: inherit; }
+
+input::-ms-clear {
+  display: none; }
+
+button {
+  cursor: pointer; }
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0; }
+
+a, a:visited {
+  text-decoration: none; }
+
+a:hover {
+  text-decoration: none; }
+
+ul li {
   list-style: none; }
 
-/* tables still need 'cellspacing="0"' in the markup */
-table {
-  border-collapse: separate;
-  border-spacing: 0; }
+img {
+  vertical-align: top; }
 
-caption, th, td {
-  text-align: left;
-  font-weight: normal; }
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: ""; }
-
-blockquote, q {
-  quotes: "" ""; }
-
-::-webkit-scrollbar {
-  width: 0; }
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit; }
 
 body {
   overflow-x: hidden; }
@@ -80,7 +84,7 @@ body {
     .topPage .navbar .navbarLogo {
       position: relative;
       top: 0px;
-      font-family: Noe Display;
+      font-family: 'Noe Display', sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 36px;
@@ -109,7 +113,7 @@ body {
         line-height: 21px;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        font-family: Larsseit;
+        font-family: 'Larsseit', sans-serif;
         color: #FFFFFF; }
   .topPage .TextTop {
     margin-top: 100px;
@@ -120,7 +124,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: Noe Display;
+      font-family: 'Noe Display', sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 120px;
@@ -131,7 +135,7 @@ body {
       display: flex;
       justify-content: center;
       width: 100%;
-      font-family: Larsseit;
+      font-family: 'Larsseit';
       font-style: normal;
       font-weight: bold;
       font-size: 18px;
@@ -142,7 +146,7 @@ body {
       padding: 25px; }
     .topPage .TextTop .TextTop3 {
       width: 100%;
-      font-family: Larsseit;
+      font-family: 'Larsseit';
       font-style: normal;
       font-weight: normal;
       font-size: 17px;
@@ -159,7 +163,7 @@ body {
       justify-content: center;
       align-items: center; }
       .topPage .contact .scroll .scrollText {
-        font-family: Larsseit;
+        font-family: 'Larsseit';
         font-style: normal;
         font-weight: bold;
         font-size: 15px;
@@ -210,7 +214,7 @@ body {
         justify-content: center;
         align-items: center; }
         .PickTrip .bg-light .wrapperPick .pickText .pickText1 {
-          font-family: Noe Display;
+          font-family: 'Noe Display', sans-serif;
           font-style: normal;
           font-weight: bold;
           font-size: 72px;
@@ -225,7 +229,7 @@ body {
           margin: 10px;
           border-radius: 0px; }
         .PickTrip .bg-light .wrapperPick .pickText .pickText3 {
-          font-family: Larsseit;
+          font-family: 'Larsseit';
           font-style: normal;
           font-weight: normal;
           font-size: 16px;
@@ -257,7 +261,7 @@ body {
   border: 0px;
   background: rgba(0, 0, 0, 0);
   border-bottom: 4px solid #41EAD4 !important;
-  font-family: Larsseit;
+  font-family: 'Larsseit';
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -274,7 +278,7 @@ body {
   justify-content: center;
   align-items: center;
   border: 0px !important;
-  font-family: Larsseit;
+  font-family: 'Larsseit';
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
@@ -359,7 +363,7 @@ body {
         border-left: 2px solid #41EAD4;
         border-top: 2px solid #41EAD4; }
       .tabContent .TabLeft .numTab .numTab2 {
-        font-family: Larsseit;
+        font-family: 'Larsseit';
         font-style: normal;
         font-weight: 800;
         font-size: 24px;
@@ -369,7 +373,7 @@ body {
         color: #41EAD4; }
       .tabContent .TabLeft .numTab .numTab3 {
         width: 250px;
-        font-family: Larsseit;
+        font-family: 'Larsseit';
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
@@ -387,7 +391,7 @@ body {
     justify-content: center;
     align-items: flex-start; }
     .tabContent .TabRight .tabText1 {
-      font-family: Noe Display;
+      font-family: 'Noe Display', sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 65px;
@@ -396,7 +400,7 @@ body {
       color: #FFFFFF;
       margin-left: 6%; }
     .tabContent .TabRight .tabText2 {
-      font-family: Larsseit;
+      font-family: 'Larsseit';
       font-style: normal;
       font-weight: 700;
       font-size: 17px;
@@ -407,7 +411,7 @@ body {
       color: #FFFFFF;
       margin-left: 6%; }
     .tabContent .TabRight .tabText3 {
-      font-family: Larsseit;
+      font-family: 'Larsseit';
       font-style: normal;
       font-weight: 400;
       font-size: 17px;
@@ -428,7 +432,7 @@ body {
       border-radius: 183px;
       margin-top: 40px;
       margin-left: 6%;
-      font-family: Larsseit;
+      font-family: 'Larsseit';
       font-style: normal;
       font-weight: bold;
       font-size: 14px;
@@ -478,7 +482,7 @@ body {
           justify-content: flex-start;
           align-items: flex-start; }
           .aboutUs .wrapperAboutUs .wrapperAboutUsG .aboutUsG .aboutUsText .aboutUsText1 {
-            font-family: Noe Display;
+            font-family: 'Noe Display', sans-serif;
             font-style: normal;
             font-weight: bold;
             font-size: 72px;
@@ -487,7 +491,7 @@ body {
             letter-spacing: -0.02em;
             color: #FFFFFF; }
           .aboutUs .wrapperAboutUs .wrapperAboutUsG .aboutUsG .aboutUsText .aboutUsText2 {
-            font-family: Larsseit;
+            font-family: 'Larsseit';
             font-size: 18px;
             font-weight: 700;
             line-height: 27px;
@@ -496,7 +500,7 @@ body {
             color: #FFFFFF;
             margin-top: 30px; }
           .aboutUs .wrapperAboutUs .wrapperAboutUsG .aboutUsG .aboutUsText .aboutUsText3 {
-            font-family: Larsseit;
+            font-family: 'Larsseit';
             font-weight: 300;
             margin-top: 17px;
             font-size: 18px;
@@ -505,7 +509,7 @@ body {
             color: #FFFFFF; }
           .aboutUs .wrapperAboutUs .wrapperAboutUsG .aboutUsG .aboutUsText .aboutUsButton {
             margin-top: 50px;
-            font-family: Larsseit;
+            font-family: 'Larsseit';
             font-style: normal;
             font-weight: bold;
             font-size: 14px;
@@ -567,7 +571,7 @@ body {
       width: 100%;
       height: 20%; }
       .thoughtsPeople .thoughtsPeopleFlex .thoughtsPeopleText .thoughtsPeopleText1 {
-        font-family: Noe Display;
+        font-family: 'Noe Display', sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 72px;
@@ -577,7 +581,7 @@ body {
         letter-spacing: -0.02em;
         color: #FFFFFF; }
       .thoughtsPeople .thoughtsPeopleFlex .thoughtsPeopleText .thoughtsPeopleText2 {
-        font-family: Larsseit;
+        font-family: 'Larsseit';
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
@@ -612,7 +616,7 @@ body {
         margin: 15px; }
         .thoughtsPeople .thoughtsPeopleBlocks .thoughtsPeopleBlocksRow .reviewsBlock .reviewsBlockText1 {
           width: 80%;
-          font-family: Larsseit;
+          font-family: 'Larsseit';
           font-style: normal;
           font-weight: 700;
           font-size: 18px;
@@ -621,7 +625,7 @@ body {
         .thoughtsPeople .thoughtsPeopleBlocks .thoughtsPeopleBlocksRow .reviewsBlock .reviewsBlockText2 {
           margin-top: 20px;
           width: 80%;
-          font-family: Larsseit;
+          font-family: 'Larsseit';
           font-style: normal;
           font-weight: 300;
           font-size: 18px;
@@ -652,7 +656,7 @@ body {
   justify-content: center;
   align-items: center; }
   .seeText .seeText1 {
-    font-family: Noe Display;
+    font-family: 'Noe Display', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 72px;
@@ -664,7 +668,7 @@ body {
   .seeText .seeText2 {
     margin-top: 20px;
     width: 388px;
-    font-family: Larsseit;
+    font-family: 'Larsseit';
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -702,7 +706,7 @@ body {
     align-items: flex-start;
     justify-content: space-between; }
     .footer .footerFlex1 .footerFlex .footerText2 {
-      font-family: Larsseit;
+      font-family: 'Larsseit';
       font-style: normal;
       font-weight: bold;
       font-size: 18px;
@@ -712,7 +716,7 @@ body {
       color: #FFFFFF; }
     .footer .footerFlex1 .footerFlex .footerText3 {
       margin-top: 15px;
-      font-family: Larsseit;
+      font-family: 'Larsseit';
       font-style: normal;
       font-weight: normal;
       font-size: 15px;
@@ -742,7 +746,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Larsseit;
+  font-family: 'Larsseit';
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -752,7 +756,7 @@ body {
   color: #FFFFFF; }
 
 .navbarLogo {
-  font-family: Playfair Display;
+  font-family: 'Noe Display', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -763,7 +767,7 @@ body {
 
 .shareIT {
   margin-bottom: 20px;
-  font-family: Larsseit;
+  font-family: "Larsseit";
   font-style: normal;
   font-weight: bold;
   font-size: 15px;
