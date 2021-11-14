@@ -1,72 +1,55 @@
-@charset "UTF-8";
-/* Указываем box sizing */
 @import url("http://fonts.cdnfonts.com/css/noe-display");
-*,
-*::before,
-*::after {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* Убираем внутренние отступы */
-ul[class],
-ol[class] {
-  padding: 0; }
+/* remember to define focus styles! */
+:focus {
+  outline: 0; }
 
-/* Убираем внешние отступы */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-ul[class],
-ol[class],
-li,
-figure,
-figcaption,
-blockquote,
-dl,
-dd {
-  margin: 0; }
-
-/* Выставляем основные настройки по-умолчанию для body */
 body {
-  min-height: 100vh;
-  scroll-behavior: smooth;
-  text-rendering: optimizeSpeed;
-  line-height: 1.5; }
+  line-height: 1;
+  color: black;
+  background: white; }
 
-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
-ul[class],
-ol[class] {
+ol, ul {
   list-style: none; }
 
-/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
-a:not([class]) {
-  text-decoration-skip-ink: auto; }
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
 
-/* Упрощаем работу с изображениями */
-img {
-  max-width: 100%;
-  display: block; }
+caption, th, td {
+  text-align: left;
+  font-weight: normal; }
 
-/* Указываем понятную периодичность в потоке данных у article*/
-article > * + * {
-  margin-top: 1em; }
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: ""; }
 
-/* Наследуем шрифты для инпутов и кнопок */
-input,
-button,
-textarea,
-select {
-  font: inherit; }
+blockquote, q {
+  quotes: "" ""; }
 
-/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important; } }
 ::-webkit-scrollbar {
   width: 0; }
 
@@ -130,7 +113,7 @@ body {
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: "Noe Display", sans-serif;
+      font-family: sans-serif Noe Display;
       font-style: normal;
       font-weight: bold;
       font-size: 120px;
