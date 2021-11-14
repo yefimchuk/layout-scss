@@ -1,13 +1,12 @@
 @font-face {
   font-family: 'Larsseit';
-  src: url('fonts/Larsseit.eot');
-  src: local('☺'), url('fonts/Larsseit.woff') format('woff'), url('fonts/Larsseit.ttf') format('truetype'), url('fonts/Larsseit.svg') format('svg');
+  src: url('../fonts/Larsseit.eot');
+  src: local('☺'), url('../fonts/Larsseit.woff') format('woff'), url('../fonts/Larsseit.ttf') format('truetype'), url('../fonts/Larsseit.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
+@import url('http://../fonts.cdnfonts.com/css/noe-display');
 @import "nullstyle.scss";
-@import "impotant.scss";
-@import "impotant.scss";
 body{
   overflow-x: hidden
 }
@@ -86,7 +85,7 @@ position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: 'Noe Display', sans-serif;
+      font-family: 'Noe Display', serif;
 
       font-style: normal;
       font-weight: bold;
