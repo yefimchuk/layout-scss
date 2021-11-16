@@ -1,20 +1,27 @@
-@import url(//db.onlinewebfonts.com/c/c8a005246131bdb05a90af9381307351?family=Noe+Display+Medium);
 
-@font-face {font-family: "Noe Display"; src: url("//db.onlinewebfonts.com/t/c8a005246131bdb05a90af9381307351.eot"); src: url("//db.onlinewebfonts.com/t/c8a005246131bdb05a90af9381307351.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/c8a005246131bdb05a90af9381307351.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/c8a005246131bdb05a90af9381307351.woff") format("woff"), url("//db.onlinewebfonts.com/t/c8a005246131bdb05a90af9381307351.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/c8a005246131bdb05a90af9381307351.svg#Noe Display Medium") format("svg"); }
+
+@import url(//db.onlinewebfonts.com/c/c8a005246131bdb05a90af9381307351?family=Noe+Display+Medium);
+@import "nullstyle.scss";
+
+@font-face {
+  font-family: "Noe Display";
+  src: url("//db.onlinewebfonts.com/t/c8a005246131bdb05a90af9381307351.eot");
+  src: url("//db.onlinewebfonts.com/t/c8a005246131bdb05a90af9381307351.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/c8a005246131bdb05a90af9381307351.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/c8a005246131bdb05a90af9381307351.woff") format("woff"), url("//db.onlinewebfonts.com/t/c8a005246131bdb05a90af9381307351.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/c8a005246131bdb05a90af9381307351.svg#Noe Display Medium") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
 
 
 @font-face {
   font-family: 'Larsseit';
   src: url('../fonts/Larsseit.eot');
   src: local('☺'), url('../fonts/Larsseit.woff') format('woff'), url('../fonts/Larsseit.ttf') format('truetype'), url('../fonts/Larsseit.svg') format('svg');
-  font-weight: normal;
+  font-weight: 300;
   font-style: normal;
 }
 
-@import "nullstyle.scss";
-body{
-  overflow-x: hidden
-}
+
+
 
 .topPage{
   background: url('img/topImg.png') 50%/cover no-repeat;
@@ -93,8 +100,9 @@ position: relative;
       font-family: 'Noe Display', sans-serif;
 
 
+
       font-style: normal;
-      font-weight: bold;
+
       font-size: 120px;
       line-height: 153px;
       letter-spacing: -0.02em;
@@ -376,7 +384,7 @@ position: relative;
           box-shadow: -10px 14px 24px rgba(1, 22, 39, 0.08);
           transform: rotate(-180deg);
           border-right: 1px solid #133149;
-          border-radius: 20% 0% 0%;
+          border-radius: 13% 0% 0%;
         }
 
         .arrow2 {
@@ -472,7 +480,7 @@ position: relative;
     }
 
     .tabText2 {
-      font-family: 'Larsseit';
+      font-family: 'Larsseit', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 17px;
@@ -521,6 +529,15 @@ position: relative;
 
       color: #FFFFFF;
 
+    }
+    .shareIT0 {
+      position: relative;
+      left: 90%;
+      top: 50px; }
+    .contact3 {
+      width: 23px;
+      height: 23px;
+      margin: 5px;
     }
   }
 }
@@ -602,7 +619,7 @@ position: relative;
           }
 
           .aboutUsText3 {
-            font-family:  'Larsseit';
+            font-family: 'Larsseit', sans-serif;
             font-weight: 300;
             margin-top: 17px;
 
@@ -751,7 +768,7 @@ position: relative;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 510px;
+        width: 35%;
         height: 504px;
         background: #02223B;
         box-shadow: 0px 20px 30px rgba(0, 201, 224, 0.03);
@@ -786,9 +803,10 @@ position: relative;
           margin: 25px;
 
           .reviewsBlockName {
+            width: 100%;
             .reviewsName {
               margin-left: 20px;
-              width: 210px;
+              width: 100%;
               display: flex;
               font-family:  Larsseit;
               font-style: normal;
@@ -861,15 +879,15 @@ position: relative;
 
 .reviewsImage {
 position: relative;
-  right: 230px;
+  left: -45%;
   top: 20px;
 }
 
 .footer {
-margin-bottom: 100px;
+  margin-top: 70px;
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: baseline;
   flex-direction: row;
 
   width: 85%;
@@ -922,17 +940,15 @@ width: 127px;
   border-bottom: 2px solid #41EAD4;
   border-right: 2px solid #41EAD4;
 }
-.shareIT0{
-  position: relative;
-  left: 500px;
-  top: 100px;
-}
-.contact3{
+
+.contact3 {
+  width: 20px;
+  height: 20px;
   margin: 5px;
 }
 .copyright{
 position: relative;
-  bottom: 200px;
+  bottom:30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -947,7 +963,7 @@ position: relative;
 
   color: #FFFFFF;
 }
-.navbarLogo{
+.navbarLogo2{
   font-family: 'Noe Display', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -955,7 +971,7 @@ position: relative;
   line-height: 190%;
 
   position: relative;
-  bottom: 200px;
+  bottom: 20px;
 
   color: #FFFFFF;
 }
@@ -970,20 +986,16 @@ position: relative;
 
   color: #FFFFFF;
 }
-.shareIT1{
+.shareIT1 {
   position: relative;
   bottom: 20px;
   right: 10px;
-width: 127px;
+  width: 117px;
   height: 34px;
   border-bottom: 2px solid #41EAD4;
   border-right: 2px solid #41EAD4;
 }
-.shareIT0{
-  position: relative;
-  left: 500px;
-  top: 100px;
-}
+
 
 @media (max-width: 550px) {
   .TextTop {
@@ -1058,30 +1070,35 @@ height: 60px;
     justify-content: center;
     align-items: center;
   }
-  .TabLeft{
+  .TabLeft {
 
     width: 75% !important;
   }
-  .tabPhoto{
+  .tabPhoto {
     width: 100% !important;
   }
-  .numTab{
-    right: 50px!important;
+  .imgTab {
+    left: -35px;
   }
-  .TabRight{
+  .numTab {
+    right: 40px !important;
+  }
+  .TabRight {
 
-    width: 100%!important;
-    height: 850px!important;
+    width: 100% !important;
+    height: 850px !important;
   }
-.tabText1{
-  margin-top: 150px;
-  font-size: 40px!important;
-}
+  .tabText1 {
+    font-weight: normal !important;
+    margin-top: 150px;
+    font-size: 50px !important;
+  }
   .tabButtonRight{
     margin-left: 0% !important;
   }
-  .aboutUsText1{
-    font-size: 45px!important;
+  .aboutUsText1 {
+    font-weight: normal !important;
+    font-size: 55px !important;
   }
   .aboutUsG{
     display: flex;
@@ -1106,26 +1123,33 @@ height: 60px;
     height: 5500px!important;
   }
 
-  .thoughtsPeopleText1{
-    font-size: 40px!important;
+  .thoughtsPeopleText1 {
+    font-size: 35px !important;
+    font-weight: normal !important;
   }
-  .thoughtsPeopleText2{
+  .thoughtsPeopleText2 {
     margin-top: 10px;
-    font-size: 15px!important;
+    font-size: 15px !important;
   }
-  .thoughtsPeopleBlocksRow{
-    flex-direction:column!important;
+  .thoughtsPeopleBlocksRow {
+    flex-direction: column !important;
   }
-  .shareIT0{
+  .tabButtonRight {
+    width: 100% !important;
+  }
+  .shareIT {
+    margin-bottom: 5px !important;
+  }
+  .shareIT0 {
     position: relative;
-    left: 150px;
+    left: 65% !important;
     top: 50px;
   }
-  .reviewsBlock{
-    height: 100%!important;
+  .reviewsBlock {
+    height: 100% !important;
     width: 90% !important;
   }
-  .wrapperAboutUsG{
+  .wrapperAboutUsG {
     margin-top: 50px!important;
   }
 
@@ -1158,22 +1182,43 @@ height: 60px;
     margin-top: 100px;
     font-size: 20px!important;
   }
-  .footer{
+  .footer {
     height: 1500px;
-    .footerFlex1{
-      justify-content: center!important;
-      align-items: center!important;
-text-align: center;
-      flex-direction: column!important;
-      .footerFlex{
-        margin-top: 20px;
+
+    .footerFlex1 {
+      justify-content: center !important;
+      align-items: center !important;
+      text-align: center;
+      flex-direction: column !important;
+
+      .footerFlex {
+        margin-top: 40px;
       }
     }
+
+    .footerText2 {
+      font-size: 30px !important;
+      margin-bottom: 10px;
+    }
   }
-  .navbarLogo{
-    bottom: 350px;
+  .navbarLogo2{
+    font-family: 'Noe Display', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 190%;
+
+    position: relative;
+
+
+    color: #FFFFFF;
+    margin-bottom: 150px;
   }
-  .copyright{
-    bottom: 250px!important;
+  .reviewsImage {
+    opacity: 0;
+    position: relative;
+    left: -45%;
+    top: 20px;
   }
+
 }
