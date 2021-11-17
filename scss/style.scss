@@ -19,214 +19,781 @@
   font-weight: 300;
   font-style: normal;
 }
+//Custom Bootstrap style
+.btn:focus{
+  border: 0px!important;
+}
+.btn-secondary{
+  background-color: rgba(0,0,0,0);
+  border: 0px;
+}
+.show>.btn-secondary.dropdown-toggle{
+  background-color: rgba(0,0,0,0);
+  border: 0px;
+}
+.btn-secondary.focus, .btn-secondary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0,0,0,0) !important;
+}
+.navbar-dark .navbar-toggler{
+  border: 0px solid red;
 
-
-
-
-.topPage{
-  background: url('img/topImg.png') 50%/cover no-repeat;
-  height: 1100px;
-  width: 100%;
-display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  .navbar {
-    width: 90%;
-    height: 150px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-
-    .navbarLogo {
-position: relative;
-      top: 0px;
-      font-family: 'Noe Display';
-
-      font-style: normal;
-      font-weight: bold;
-      font-size: 36px;
-      line-height: 190%;
-      color: #FFFFFF;
-    }
-
-    .navbar-menu {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-
-      .imgNavbar {
-        width: 20px;
-        height: 20px;
-        margin-right: 20px;
-      }
-
-      .navbarButtonMenu {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 160px;
-    height: 50px;
-    background: #00C9E0;
-    box-shadow: 5px 15px 40px rgba(0, 201, 224, 0.2);
-    border-radius: 48px;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-        line-height: 21px;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        font-family: 'Larsseit', sans-serif;
-        color: #FFFFFF
-
-      }
-    }
-
-  }
-
-  .TextTop {
-
-    margin-top: 100px;
-    width: 70%;
-    height: 300px;
-
-    .TextTop1 {
-
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: 'Noe Display', sans-serif;
-
-
-
-      font-style: normal;
-
-      font-size: 120px;
-      line-height: 153px;
-      letter-spacing: -0.02em;
-      color: #FFFFFF;
-
-
-    }
-
-    .TextTop2 {
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      font-family: 'Larsseit', sans-serif;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 18px;
-      line-height: 24px;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #FFFFFF;
-      padding: 25px;
-    }
-
-    .TextTop3 {
-      width: 100%;
-      font-family: 'Larsseit';
-      font-style: normal;
-      font-weight: normal;
-      font-size: 17px;
-      line-height: 150%;
-      text-align: center;
-      color: #FFFFFF;
-    }
-  }
-
-  .contact {
-
-    width: 90%;
-    height: 200px;
-    margin-top: 200px;
-
-    .scroll {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-
-      .scrollText {
-        font-family: 'Larsseit';
-        font-style: normal;
-        font-weight: bold;
-        font-size: 15px;
-        line-height: 190%;
-        /* or 28px */
-
-        letter-spacing: 0.05em;
-
-        color: #FFFFFF;
-
-        opacity: 0.9;
-        transform: rotate(-90deg);
-      }
-
-      .scrollArrow {
-        margin-top: 25px;
-        width: 2px;
-        height: 80px;
-        background: linear-gradient(180deg, #09F4F4 0%, #00C9E0 100%);
-        border-radius: 13px;
-      }
-    }
-
-    .contactIcons {
-      width: 22px;
-      height: 18px;
-
-      .iconCont {
-        margin-top: 10px;
-      }
-    }
-  }
-
-  .navGrad {
-    height: 157px;
-    width: 100%;
-    background: linear-gradient(180deg, rgba(1, 22, 39, 0) 0%, #011627 76.64%, #011627 100%);
-
-  }
+}
+.navbar-toggler.focus{
+  border: 0px;
+}
+.navbar-toggler-icon{
+  width: 1.8em;
+  height: 1.8em;
+}
+.btn-secondary:hover {
+  color: #fff;
+  background-color: rgba(0,0,0,0);
+  border: 0px;
 }
 
-.PickTrip {
+.form-control{
+width: 100%;
+height: 40px;
+  animation-duration: 1s;
+  animation-name: slidein;
+}
 
-  position: relative;
-  z-index: 1;
-  width: 100%;
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show>.btn-secondary.dropdown-toggle{
+  background-color: rgba(0,0,0,0);
 
-  height: 4000px;
-  border: 0px;
+}
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show>.btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0,0,0,0);
+}
 
-  .bg-light {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
-    height: 100%;
+
+.dropdown-menu.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px!important;
+  margin: 0px!important;
+  width: 500%;
+background-color: rgba(0,0,0,0);
+  border: 0px!important;
+
+}
+
+@keyframes slidein {
+  from {
+
+   margin-left: 115%;
+    width: 0%;
+  }
+
+  to {
+
     width: 100%;
-    background: url('img/bgLight.png') 0 0/cover no-repeat;
-    background-color: #011627 !important;
+  }
+}
+  .img-fluid{
+    max-width: 1000%;
+  }
+  .dropleft .dropdown-toggle::before{
+    opacity: 0;
+  }
+  .menu{
+    background-color: rgba(0, 0, 0, 0) !important;
+  }
+  .topPage{
+    background: url('img/topImg.png') 50%/cover no-repeat;
+    height: 1100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .navbar {
+      width: 90%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-    .wrapperPick {
 
-      width: 70%;
-      height: 50%;
+      .navbarLogo {
+        position: relative;
+        top: 0px;
+        font-family: 'Noe Display';
+
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 190%;
+        color: #FFFFFF;
+      }
+
+      .navbar-menu {
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-left: 92%;
+
+        .imgNavbar {
+          width: 25px;
+          height: 25px;
+          margin-right: 20px;
+        }
+
+        .navbarButtonMenu {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 160px;
+          height: 50px;
+          background: #00C9E0;
+          box-shadow: 5px 15px 40px rgba(0, 201, 224, 0.2);
+          border-radius: 48px;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 21px;
+          letter-spacing: 0.1em;
+          text-transform: uppercase;
+          font-family: 'Larsseit', sans-serif;
+          color: #FFFFFF
+
+        }
+      }
+
+    }
+
+    .TextTop {
 
       margin-top: 100px;
+      width: 70%;
+      height: 300px;
 
-      .pickText {
+      .TextTop1 {
+
         width: 100%;
         display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: 'Noe Display', sans-serif;
 
+
+
+        font-style: normal;
+
+        font-size: 120px;
+        line-height: 153px;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+
+
+      }
+
+      .TextTop2 {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        font-family: 'Larsseit', sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        padding: 25px;
+      }
+
+      .TextTop3 {
+        width: 100%;
+        font-family: 'Larsseit';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 150%;
+        text-align: center;
+        color: #FFFFFF;
+      }
+    }
+
+    .contact {
+
+      width: 90%;
+      height: 200px;
+      margin-top: 200px;
+
+      .scroll {
+        display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
 
-        .pickText1 {
+        .scrollText {
+          font-family: 'Larsseit';
+          font-style: normal;
+          font-weight: bold;
+          font-size: 15px;
+          line-height: 190%;
+          /* or 28px */
+
+          letter-spacing: 0.05em;
+
+          color: #FFFFFF;
+
+          opacity: 0.9;
+          transform: rotate(-90deg);
+        }
+
+        .scrollArrow {
+          margin-top: 25px;
+          width: 2px;
+          height: 80px;
+          background: linear-gradient(180deg, #09F4F4 0%, #00C9E0 100%);
+          border-radius: 13px;
+        }
+      }
+
+      .contactIcons {
+        width: 22px;
+        height: 18px;
+
+        .iconCont {
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .navGrad {
+      height: 157px;
+      width: 100%;
+      background: linear-gradient(180deg, rgba(1, 22, 39, 0) 0%, #011627 76.64%, #011627 100%);
+
+    }
+  }
+
+  .PickTrip {
+
+    position: relative;
+    z-index: 1;
+    width: 100%;
+
+    height: 4000px;
+    border: 0px;
+
+    .bg-light {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: center;
+      height: 100%;
+      width: 100%;
+      background: url('img/bgLight.png') 0 0/cover no-repeat;
+      background-color: #011627 !important;
+
+      .wrapperPick {
+
+        width: 70%;
+        height: 50%;
+
+        margin-top: 100px;
+
+        .pickText {
+          width: 100%;
+          display: flex;
+
+          justify-content: center;
+          align-items: center;
+
+          .pickText1 {
+            font-family: 'Noe Display', sans-serif;
+
+            font-style: normal;
+            font-weight: bold;
+            font-size: 72px;
+            line-height: 110%;
+            /* or 79px */
+
+            text-align: center;
+            letter-spacing: -0.02em;
+
+            color: #FFFFFF;
+          }
+
+          .pickText2 {
+
+            height: 22px;
+            width: 22px;
+            margin: 10px;
+            border-radius: 0px;
+
+          }
+
+          .pickText3 {
+            font-family: 'Larsseit';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 150%;
+            /* or 24px */
+
+            letter-spacing: -0.02em;
+
+            color: #FFFFFF;
+          }
+        }
+
+      }
+
+    }
+
+  }
+
+  .tab-content {
+    margin-top: 100px;
+  }
+  .nav-tabs{
+    border: 0px;
+  }
+  .nav-tabs .nav-link {
+    width: 100%;
+    color: white;
+  }
+  .ul_1{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 70px;
+
+  }
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    width: 100%;
+    height: 60px;
+    border: 0px;
+    background: rgba(0, 0, 0, 0);
+    border-bottom: 4px solid #41EAD4!important;
+    font-family: 'Larsseit';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 200%;
+    opacity: 1;
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: #41EAD4;
+  }
+
+  .ul_1 {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px !important;
+    font-family: 'Larsseit';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 110%;
+    text-align: center;
+    letter-spacing: -0.02em;
+
+    color: white;
+    opacity: 0.5;
+    border-bottom: 1px solid white !important;
+    transition: .1s linear;
+
+    &:hover {
+      color: white;
+      opacity: 1;
+    }
+  }
+
+  .ul_2 {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+    width: 25%;
+
+  }
+
+  .tabContent {
+    display: flex;
+    flex-direction: row;
+
+    .TabLeft {
+      width: 50%;
+      height: 600px;
+
+      .tabPhoto {
+
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        background-image: url("img/tab.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 75%;
+        height: 607px;
+        border-radius: 10px;
+        z-index: 2;
+
+        .arrow {
+
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10px;
+
+          .arrow1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 65px;
+            height: 65px;
+            background: #011627;
+            box-shadow: -10px 14px 24px rgba(1, 22, 39, 0.08);
+            transform: rotate(-180deg);
+            border-right: 1px solid #133149;
+            border-radius: 13% 0% 0%;
+          }
+
+          .arrow2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            width: 65px;
+            height: 65px;
+            background: #011627;
+            box-shadow: -10px 14px 24px rgba(1, 22, 39, 0.08);
+            transform: rotate(-180deg);
+            border-radius: 0% 0% 25%;
+          }
+        }
+
+      }
+
+      .imgTab {
+        position: relative;
+        bottom: 175px;
+        z-index: 1;
+        right: 55px;
+      }
+
+      .numTab {
+        position: relative;
+        bottom: 600px;
+        right: 94px;
+        z-index: 3;
+
+        .numTab1 {
+
+          width: 200px;
+          height: 20px;
+          border-left: 2px solid #41EAD4;
+          border-top: 2px solid #41EAD4;
+
+
+        }
+
+        .numTab2 {
+          font-family: 'Larsseit';
+          font-style: normal;
+          font-weight: 800;
+          font-size: 24px;
+          line-height: 150%;
+          /* or 36px */
+
+          letter-spacing: 0.15em;
+
+          color: #41EAD4;
+        }
+
+        .numTab3 {
+          width: 250px;
+          font-family: 'Larsseit';
+          font-style: normal;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 150%;
+          /* or 36px */
+
+          letter-spacing: 0.15em;
+
+          color: #FFFFFF;
+          margin-top: 10px;
+        }
+      }
+    }
+
+    .TabRight {
+      width: 50%;
+      height: 600px;
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+
+      .tabText1 {
+
+        font-family: 'Noe Display', sans-serif;
+
+        font-style: normal;
+        font-weight: bold;
+        font-size: 65px;
+        line-height: 110%;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        margin-left: 6%;
+
+      }
+
+      .tabText2 {
+        font-family: 'Larsseit', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 150%;
+        /* or 25px */
+        margin-top: 30px;
+        letter-spacing: -0.02em;
+        color: #FFFFFF;
+        margin-left: 6%;
+      }
+
+      .tabText3 {
+        font-family: 'Larsseit';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 150%;
+        /* or 25px */
+        margin-top: 30px;
+        letter-spacing: -0.02em;
+
+        color: #FFFFFF;
+        margin-left: 6%;
+      }
+
+      .tabButtonRight {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 282px;
+        height: 65px;
+        background: #00C9E0;
+        box-shadow: 5px 15px 40px rgba(0, 201, 224, 0.2);
+        border-radius: 183px;
+        margin-top: 40px;
+        margin-left: 6%;
+        font-family: 'Larsseit';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 190%;
+        /* identical to box height, or 27px */
+
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+
+      }
+      .shareIT0 {
+        position: relative;
+        left: 90%;
+        top: 50px; }
+      .contact3 {
+        width: 23px;
+        height: 23px;
+        margin: 5px;
+      }
+    }
+  }
+
+  .aboutUs {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #011627 50%);
+    width: 100%;
+    height: 100%;
+
+    .wrapperAboutUs {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      opacity: 1;
+      width: 100%;
+      height: 100%;
+      background-image: url("img/Imagebg.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top;
+
+      .wrapperAboutUsG {
+        margin-top: 250px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+
+        .aboutUsG {
+
+          width: 90%;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+
+          .aboutUsPhotos {
+
+            width: 60%;
+
+          }
+
+          .aboutUsText {
+            margin-bottom: 200px;
+            height: 100%;
+
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            .aboutUsText1 {
+              font-family: 'Noe Display', sans-serif;
+
+
+              font-style: normal;
+              font-weight: bold;
+              font-size: 72px;
+              line-height: 110%;
+              text-align: center;
+              letter-spacing: -0.02em;
+
+              color: #FFFFFF;
+            }
+
+            .aboutUsText2 {
+              font-family:  'Larsseit';
+              font-size: 18px;
+              font-weight: 700;
+              line-height: 27px;
+              letter-spacing: -0.02em;
+              text-align: left;
+              color: #FFFFFF;
+              margin-top: 30px;
+            }
+
+            .aboutUsText3 {
+              font-family: 'Larsseit', sans-serif;
+              font-weight: 300;
+              margin-top: 17px;
+
+              font-size: 18px;
+              letter-spacing: -0.02em;
+              text-align: left;
+              color: #FFFFFF;
+            }
+
+            .aboutUsButton {
+              margin-top: 50px;
+              font-family:  'Larsseit';
+              font-style: normal;
+              font-weight: bold;
+              font-size: 14px;
+              line-height: 190%;
+              /* identical to box height, or 27px */
+
+              letter-spacing: 0.15em;
+              text-transform: uppercase;
+
+              color: #FFFFFF;
+              width: 282px;
+              height: 65px;
+              background: #00C9E0;
+              box-shadow: 5px 15px 40px rgba(0, 201, 224, 0.2);
+              border-radius: 183px;
+              color: #FFFFFF;
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+
+  .aboutUsPhotosFlex {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    .aboutUsPhotosFlex1 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .aboutUsImg{
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .aboutUsPhotosFlex2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .aboutUsImg{
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  .thoughtsPeople {
+    width: 85%;
+    margin-top: 250px;
+    display: flex;
+
+    border-radius: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    height: 1500px;
+
+    .thoughtsPeopleFlex {
+      background: #011627;
+      width: 100%;
+      height: 100%;
+      border-radius: 7px;
+
+      .thoughtsPeopleText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 20%;
+
+
+        .thoughtsPeopleText1 {
           font-family: 'Noe Display', sans-serif;
 
           font-style: normal;
@@ -241,965 +808,239 @@ position: relative;
           color: #FFFFFF;
         }
 
-        .pickText2 {
-
-          height: 22px;
-          width: 22px;
-          margin: 10px;
-          border-radius: 0px;
-
-        }
-
-        .pickText3 {
+        .thoughtsPeopleText2 {
           font-family: 'Larsseit';
           font-style: normal;
-          font-weight: normal;
-          font-size: 16px;
+          font-weight: bold;
+          font-size: 24px;
           line-height: 150%;
-          /* or 24px */
+          /* or 36px */
 
-          letter-spacing: -0.02em;
+          text-align: center;
+          letter-spacing: 0.15em;
 
           color: #FFFFFF;
         }
-      }
-
-    }
-
-  }
-
-}
-
-.tab-content {
-  margin-top: 100px;
-}
-.nav-tabs{
-  border: 0px;
-}
-.nav-tabs .nav-link {
-  width: 100%;
-  color: white;
-}
-.ul_1{
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  margin-top: 70px;
-
-}
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
-  width: 100%;
-  height: 60px;
-  border: 0px;
-  background: rgba(0, 0, 0, 0);
-  border-bottom: 4px solid #41EAD4!important;
-  font-family: 'Larsseit';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 200%;
-  opacity: 1;
-  text-align: center;
-  letter-spacing: -0.02em;
-
-  color: #41EAD4;
-}
-
-.ul_1 {
-  width: 100%;
-  height: 60px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 0px !important;
-  font-family: 'Larsseit';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 110%;
-  text-align: center;
-  letter-spacing: -0.02em;
-
-  color: white;
-  opacity: 0.5;
-  border-bottom: 1px solid white !important;
-  transition: .1s linear;
-
-  &:hover {
-    color: white;
-    opacity: 1;
-  }
-}
-
-.ul_2 {
-  display: flex;
-
-  justify-content: center;
-  align-items: center;
-  width: 25%;
-
-}
-
-.tabContent {
-  display: flex;
-  flex-direction: row;
-
-  .TabLeft {
-    width: 50%;
-    height: 600px;
-
-    .tabPhoto {
-
-      position: relative;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-      align-items: flex-end;
-      background-image: url("img/tab.png");
-      background-repeat: no-repeat;
-      background-size: cover;
-      width: 75%;
-      height: 607px;
-      border-radius: 10px;
-      z-index: 2;
-
-      .arrow {
-
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        border-radius: 10px;
-
-        .arrow1 {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          width: 65px;
-          height: 65px;
-          background: #011627;
-          box-shadow: -10px 14px 24px rgba(1, 22, 39, 0.08);
-          transform: rotate(-180deg);
-          border-right: 1px solid #133149;
-          border-radius: 13% 0% 0%;
-        }
-
-        .arrow2 {
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          width: 65px;
-          height: 65px;
-          background: #011627;
-          box-shadow: -10px 14px 24px rgba(1, 22, 39, 0.08);
-          transform: rotate(-180deg);
-          border-radius: 0% 0% 25%;
-        }
-      }
-
-    }
-
-    .imgTab {
-      position: relative;
-      bottom: 175px;
-      z-index: 1;
-      right: 55px;
-    }
-
-    .numTab {
-      position: relative;
-      bottom: 600px;
-      right: 94px;
-      z-index: 3;
-
-      .numTab1 {
-
-        width: 200px;
-        height: 20px;
-        border-left: 2px solid #41EAD4;
-        border-top: 2px solid #41EAD4;
-
 
       }
 
-      .numTab2 {
-        font-family: 'Larsseit';
-        font-style: normal;
-        font-weight: 800;
-        font-size: 24px;
-        line-height: 150%;
-        /* or 36px */
-
-        letter-spacing: 0.15em;
-
-        color: #41EAD4;
-      }
-
-      .numTab3 {
-        width: 250px;
-        font-family: 'Larsseit';
-        font-style: normal;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 150%;
-        /* or 36px */
-
-        letter-spacing: 0.15em;
-
-        color: #FFFFFF;
-        margin-top: 10px;
-      }
-    }
-  }
-
-  .TabRight {
-    width: 50%;
-    height: 600px;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-
-    .tabText1 {
-
-      font-family: 'Noe Display', sans-serif;
-
-      font-style: normal;
-      font-weight: bold;
-      font-size: 65px;
-      line-height: 110%;
-      letter-spacing: -0.02em;
-      color: #FFFFFF;
-      margin-left: 6%;
 
     }
 
-    .tabText2 {
-      font-family: 'Larsseit', sans-serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 17px;
-      line-height: 150%;
-      /* or 25px */
-      margin-top: 30px;
-      letter-spacing: -0.02em;
-      color: #FFFFFF;
-      margin-left: 6%;
-    }
-
-    .tabText3 {
-      font-family: 'Larsseit';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 17px;
-      line-height: 150%;
-      /* or 25px */
-      margin-top: 30px;
-      letter-spacing: -0.02em;
-
-      color: #FFFFFF;
-      margin-left: 6%;
-    }
-
-    .tabButtonRight {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 282px;
-      height: 65px;
-      background: #00C9E0;
-      box-shadow: 5px 15px 40px rgba(0, 201, 224, 0.2);
-      border-radius: 183px;
-      margin-top: 40px;
-      margin-left: 6%;
-      font-family: 'Larsseit';
-      font-style: normal;
-      font-weight: bold;
-      font-size: 14px;
-      line-height: 190%;
-      /* identical to box height, or 27px */
-
-      letter-spacing: 0.15em;
-      text-transform: uppercase;
-
-      color: #FFFFFF;
-
-    }
-    .shareIT0 {
-      position: relative;
-      left: 90%;
-      top: 50px; }
-    .contact3 {
-      width: 23px;
-      height: 23px;
-      margin: 5px;
-    }
-  }
-}
-
-.aboutUs {
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #011627 50%);
-  width: 100%;
-  height: 100%;
-
-  .wrapperAboutUs {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    opacity: 1;
-    width: 100%;
-    height: 100%;
-    background-image: url("img/Imagebg.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top;
-
-    .wrapperAboutUsG {
-      margin-top: 250px;
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-
-      .aboutUsG {
-
-        width: 90%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-
-        .aboutUsPhotos {
-
-          width: 60%;
-
-        }
-
-        .aboutUsText {
-          margin-bottom: 200px;
-          height: 100%;
-
-          width: 30%;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-start;
-          align-items: flex-start;
-
-          .aboutUsText1 {
-            font-family: 'Noe Display', sans-serif;
-
-
-            font-style: normal;
-            font-weight: bold;
-            font-size: 72px;
-            line-height: 110%;
-            text-align: center;
-            letter-spacing: -0.02em;
-
-            color: #FFFFFF;
-          }
-
-          .aboutUsText2 {
-            font-family:  'Larsseit';
-            font-size: 18px;
-            font-weight: 700;
-            line-height: 27px;
-            letter-spacing: -0.02em;
-            text-align: left;
-            color: #FFFFFF;
-            margin-top: 30px;
-          }
-
-          .aboutUsText3 {
-            font-family: 'Larsseit', sans-serif;
-            font-weight: 300;
-            margin-top: 17px;
-
-            font-size: 18px;
-            letter-spacing: -0.02em;
-            text-align: left;
-            color: #FFFFFF;
-          }
-
-          .aboutUsButton {
-            margin-top: 50px;
-            font-family:  'Larsseit';
-            font-style: normal;
-            font-weight: bold;
-            font-size: 14px;
-            line-height: 190%;
-            /* identical to box height, or 27px */
-
-            letter-spacing: 0.15em;
-            text-transform: uppercase;
-
-            color: #FFFFFF;
-            width: 282px;
-            height: 65px;
-            background: #00C9E0;
-            box-shadow: 5px 15px 40px rgba(0, 201, 224, 0.2);
-            border-radius: 183px;
-            color: #FFFFFF;
-          }
-        }
-      }
-    }
-
-  }
-
-}
-
-.aboutUsPhotosFlex {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-
-  .aboutUsPhotosFlex1 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    .aboutUsImg{
-      width: 100%;
-      height: auto;
-    }
-  }
-
-  .aboutUsPhotosFlex2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    .aboutUsImg{
-      width: 100%;
-      height: auto;
-    }
-  }
-}
-
-.thoughtsPeople {
-  width: 85%;
-  margin-top: 250px;
-  display: flex;
-
-  border-radius: 8px;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 85%;
-  height: 1500px;
-
-  .thoughtsPeopleFlex {
-    background: #011627;
-    width: 100%;
-    height: 100%;
-    border-radius: 7px;
-
-    .thoughtsPeopleText {
+    .thoughtsPeopleBlocks {
+      margin-bottom: 100px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      height: 80%;
       width: 100%;
-      height: 20%;
 
-
-      .thoughtsPeopleText1 {
-        font-family: 'Noe Display', sans-serif;
-
-        font-style: normal;
-        font-weight: bold;
-        font-size: 72px;
-        line-height: 110%;
-        /* or 79px */
-
-        text-align: center;
-        letter-spacing: -0.02em;
-
-        color: #FFFFFF;
-      }
-
-      .thoughtsPeopleText2 {
-        font-family: 'Larsseit';
-        font-style: normal;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 150%;
-        /* or 36px */
-
-        text-align: center;
-        letter-spacing: 0.15em;
-
-        color: #FFFFFF;
-      }
-
-    }
-
-
-  }
-
-  .thoughtsPeopleBlocks {
-    margin-bottom: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80%;
-    width: 100%;
-
-    .thoughtsPeopleBlocksRow {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-
-      .reviewsBlock {
+      .thoughtsPeopleBlocksRow {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
-        width: 35%;
-        height: 504px;
-        background: #02223B;
-        box-shadow: 0px 20px 30px rgba(0, 201, 224, 0.03);
-        border-radius: 5px;
-        margin: 15px;
 
-        .reviewsBlockText1 {
-          width: 80%;
-          font-family: 'Larsseit';
-          font-style: normal;
-          font-weight: 700;
-          font-size: 18px;
-          line-height: 190%;
-          color: #FFFFFF;
+        .reviewsBlock {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          width: 35%;
+          height: 504px;
+          background: #02223B;
+          box-shadow: 0px 20px 30px rgba(0, 201, 224, 0.03);
+          border-radius: 5px;
+          margin: 15px;
 
-        }
+          .reviewsBlockText1 {
+            width: 80%;
+            font-family: 'Larsseit';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 190%;
+            color: #FFFFFF;
 
-        .reviewsBlockText2 {
-          margin-top: 20px;
-          width: 80%;
-          font-family:  'Larsseit';
-          font-style: normal;
-          font-weight: 300;
-          font-size: 18px;
-          line-height: 190%;
-          color: #FFFFFF;
+          }
 
-        }
+          .reviewsBlockText2 {
+            margin-top: 20px;
+            width: 80%;
+            font-family:  'Larsseit';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 190%;
+            color: #FFFFFF;
 
-        .reviewsBlockAvatar {
-          width: 80%;
-          margin: 25px;
+          }
 
-          .reviewsBlockName {
-            width: 100%;
-            .reviewsName {
-              margin-left: 20px;
+          .reviewsBlockAvatar {
+            width: 80%;
+            margin: 25px;
+
+            .reviewsBlockName {
               width: 100%;
-              display: flex;
-              font-family:  Larsseit;
-              font-style: normal;
-              font-weight: bold;
-              font-size: 12px;
-              line-height: 170%;
-              align-items: center;
-              letter-spacing: 0.15em;
-              text-transform: uppercase;
+              .reviewsName {
+                margin-left: 20px;
+                width: 100%;
+                display: flex;
+                font-family:  Larsseit;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 12px;
+                line-height: 170%;
+                align-items: center;
+                letter-spacing: 0.15em;
+                text-transform: uppercase;
 
-              color: #FFFFFF;
+                color: #FFFFFF;
+              }
             }
           }
         }
       }
     }
-  }
-
-}
-
-.seeText {
-
-  width: 85%;
-  background: #011627;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-  .seeText1 {
-    font-family: 'Noe Display', sans-serif;
-
-    font-style: normal;
-    font-weight: bold;
-    font-size: 72px;
-    line-height: 110%;
-    /* or 79px */
-
-    text-align: center;
-    letter-spacing: -0.02em;
-
-    color: #FFFFFF;
 
   }
 
-  .seeText2 {
-    margin-top: 20px;
-    width: 388px;
-    font-family:  'Larsseit';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 150%;
-    /* or 36px */
+  .seeText {
 
-    text-align: center;
-    letter-spacing: 0.07em;
-
-    color: #FFFFFF;
-  }
-
-  .seeT {
-    margin-top: 120px;
-    width: 2px;
-    height: 80px;
-    background: linear-gradient(180deg, #09F4F4 0%, #00C9E0 100%);
-    border-radius: 13px;
-  }
-}
-
-.reviewsImage {
-position: relative;
-  left: -45%;
-  top: 20px;
-}
-
-.footer {
-  margin-top: 70px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: baseline;
-  flex-direction: row;
-
-  width: 85%;
-  background: #011627;
-  height: 500px;
-
-  .footerFlex1 {
-
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-
-    .footerFlex {
-      .footerText2 {
-        font-family:  'Larsseit';
-        font-style: normal;
-        font-weight: bold;
-        font-size: 18px;
-        line-height: 24px;
-        /* identical to box height */
-
-        text-transform: uppercase;
-
-        color: #FFFFFF;
-
-      }
-      .footerText3{
-        margin-top: 15px;
-        font-family:  'Larsseit';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 15px;
-        line-height: 19px;
-
-        color: #FFFFFF;
-      }
-    }
-  }
-
-  color: #FFFFFF;
-}
-.shareIT1{
-  position: relative;
-  bottom: 20px;
-  right: 10px;
-width: 127px;
-  height: 34px;
-  border-bottom: 2px solid #41EAD4;
-  border-right: 2px solid #41EAD4;
-}
-
-.contact3 {
-  width: 20px;
-  height: 20px;
-  margin: 5px;
-}
-.copyright{
-position: relative;
-  bottom:30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family:  'Larsseit';
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  line-height: 25px;
-  /* identical to box height, or 167% */
-
-  text-align: center;
-
-  color: #FFFFFF;
-}
-.navbarLogo2{
-  font-family: 'Noe Display', sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 190%;
-
-  position: relative;
-  bottom: 20px;
-
-  color: #FFFFFF;
-}
-.shareIT{
-  margin-bottom: 20px;
-  font-family:  "Larsseit";
-  font-style: normal;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 150%;
-  letter-spacing: 0.15em;
-
-  color: #FFFFFF;
-}
-.shareIT1 {
-  position: relative;
-  bottom: 20px;
-  right: 10px;
-  width: 117px;
-  height: 34px;
-  border-bottom: 2px solid #41EAD4;
-  border-right: 2px solid #41EAD4;
-}
-
-
-@media (max-width: 550px) {
-  .TextTop {
-    width: 90% !important;
-  }
-  .TextTop1 {
-    font-size: 60px !important;
-    line-height: 60px !important;;
-  }
-  .TextTop2 {
-    font-size: 16px !important;
-    text-align: center;
-  }
-  .navGrad {
-    position: relative;
-    top: 5px;
-  }
-  .pickText {
+    width: 85%;
+    background: #011627;
     display: flex;
     flex-direction: column;
-  }
-  .pickText1 {
-    font-size: 40px !important;
-  }
-  .contactFlex{
-    width: 90% !important;
-  }
-  .scroll{
-position: relative;
-    right: 20px;
-    bottom: 5px;
-  }
-  .pickText{
-    position: relative;
-    bottom: 50px;
-  }
-  .pickText3{
-    text-align: center;
-  }
-  .tabContent{
-    display: flex;
-    flex-direction: column!important;
-  }
-  .wrapperPick{
-    width: 90% !important;
-    flex-wrap: nowrap;
-  }
-  .ul_1{
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 20px;
-    text-align: center;
-    flex-wrap: inherit;
-
-  }
-  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
-
-    font-weight: normal;
-    font-size: 15px;
-    line-height: 20px;
-    text-align: center;
-    flex-wrap: inherit;
-  }
-  .ul_2{
-
-height: 60px;
-    width: 100%;
-    white-space: normal
-  }
-  .tabContent{
-    display: flex;
     justify-content: center;
     align-items: center;
-  }
-  .TabLeft {
 
-    width: 75% !important;
-  }
-  .tabPhoto {
-    width: 100% !important;
-  }
-  .imgTab {
-    left: -35px;
-  }
-  .numTab {
-    right: 40px !important;
-  }
-  .TabRight {
+    .seeText1 {
+      font-family: 'Noe Display', sans-serif;
 
-    width: 100% !important;
-    height: 850px !important;
-  }
-  .tabText1 {
-    font-weight: normal !important;
-    margin-top: 150px;
-    font-size: 50px !important;
-  }
-  .tabButtonRight{
-    margin-left: 0% !important;
-  }
-  .aboutUsText1 {
-    font-weight: normal !important;
-    font-size: 55px !important;
-  }
-  .aboutUsG{
-    display: flex;
-    justify-content: center;
-    flex-direction: column!important;
-    align-items: center;
-  }
-  .aboutUsText{
-    width: 90% !important;
-  }
-  .aboutUsText {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 72px;
+      line-height: 110%;
+      /* or 79px */
 
-    align-items: center!important;
-  }
-  .aboutUsPhotos{
-    position: relative;
-    bottom: 100px;
+      text-align: center;
+      letter-spacing: -0.02em;
 
-    width: 110% !important;
-  }
-  .PickTrip{
-    height: 5500px!important;
-  }
+      color: #FFFFFF;
 
-  .thoughtsPeopleText1 {
-    font-size: 35px !important;
-    font-weight: normal !important;
-  }
-  .thoughtsPeopleText2 {
-    margin-top: 10px;
-    font-size: 15px !important;
-  }
-  .thoughtsPeopleBlocksRow {
-    flex-direction: column !important;
-  }
-  .tabButtonRight {
-    width: 100% !important;
-  }
-  .shareIT {
-    margin-bottom: 5px !important;
-  }
-  .shareIT0 {
-    position: relative;
-    left: 65% !important;
-    top: 50px;
-  }
-  .reviewsBlock {
-    height: 100% !important;
-    width: 90% !important;
-  }
-  .wrapperAboutUsG {
-    margin-top: 50px!important;
-  }
+    }
 
-  .thoughtsPeople{
-    margin-top: 0px;
-    width: 90% !important;
-    height: auto!important;
-    .thoughtsPeopleFlex{
-      height: 100%!important;
-      .thoughtsPeopleText{
+    .seeText2 {
+      margin-top: 20px;
+      width: 388px;
+      font-family:  'Larsseit';
+      font-style: normal;
+      font-weight: bold;
+      font-size: 24px;
+      line-height: 150%;
+      /* or 36px */
 
-        height: 10% !important;
-      }
-      .thoughtsPeopleBlocks{
-        height: 90% !important;
-      }
+      text-align: center;
+      letter-spacing: 0.07em;
+
+      color: #FFFFFF;
+    }
+
+    .seeT {
+      margin-top: 120px;
+      width: 2px;
+      height: 80px;
+      background: linear-gradient(180deg, #09F4F4 0%, #00C9E0 100%);
+      border-radius: 13px;
     }
   }
 
-  .reviewsName{
-    height: auto;
-    width: 100% !important;
+  .reviewsImage {
+    position: relative;
+    left: -45%;
+    top: 20px;
   }
-  .seeText1{
-    margin-top: 100px;
-    font-size: 40px!important;
-  }
-  .seeText2{
-    width: 90% !important;
-    margin-top: 100px;
-    font-size: 20px!important;
-  }
+
   .footer {
-    height: 1500px;
+    margin-top: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    flex-direction: row;
+
+    width: 85%;
+    background: #011627;
+    height: 500px;
 
     .footerFlex1 {
-      justify-content: center !important;
-      align-items: center !important;
-      text-align: center;
-      flex-direction: column !important;
+
+      width: 80%;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
 
       .footerFlex {
-        margin-top: 40px;
+        .footerText2 {
+          font-family:  'Larsseit';
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 24px;
+          /* identical to box height */
+
+          text-transform: uppercase;
+
+          color: #FFFFFF;
+
+        }
+        .footerText3{
+          margin-top: 15px;
+          font-family:  'Larsseit';
+          font-style: normal;
+          font-weight: normal;
+          font-size: 15px;
+          line-height: 19px;
+
+          color: #FFFFFF;
+        }
       }
     }
 
-    .footerText2 {
-      font-size: 30px !important;
-      margin-bottom: 10px;
-    }
+    color: #FFFFFF;
+  }
+  .shareIT1{
+    position: relative;
+    bottom: 20px;
+    right: 10px;
+    width: 127px;
+    height: 34px;
+    border-bottom: 2px solid #41EAD4;
+    border-right: 2px solid #41EAD4;
+  }
+
+  .contact3 {
+    width: 20px;
+    height: 20px;
+    margin: 5px;
+  }
+  .copyright{
+    position: relative;
+    bottom:30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:  'Larsseit';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 25px;
+    /* identical to box height, or 167% */
+
+    text-align: center;
+
+    color: #FFFFFF;
   }
   .navbarLogo2{
     font-family: 'Noe Display', sans-serif;
@@ -1209,16 +1050,292 @@ height: 60px;
     line-height: 190%;
 
     position: relative;
-
+    bottom: 20px;
 
     color: #FFFFFF;
-    margin-bottom: 150px;
   }
-  .reviewsImage {
-    opacity: 0;
+  .shareIT{
+    margin-bottom: 20px;
+    font-family:  "Larsseit";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 0.15em;
+
+    color: #FFFFFF;
+  }
+  .shareIT1 {
     position: relative;
-    left: -45%;
-    top: 20px;
+    bottom: 20px;
+    right: 10px;
+    width: 117px;
+    height: 34px;
+    border-bottom: 2px solid #41EAD4;
+    border-right: 2px solid #41EAD4;
   }
 
-}
+
+  @media (max-width: 550px) {
+    .TextTop {
+      width: 90% !important;
+    }
+    .TextTop1 {
+      font-size: 60px !important;
+      line-height: 60px !important;;
+    }
+    .TextTop2 {
+      font-size: 16px !important;
+      text-align: center;
+    }
+    .navGrad {
+      position: relative;
+      top: 5px;
+    }
+    .pickText {
+      display: flex;
+      flex-direction: column;
+    }
+    .pickText1 {
+      font-size: 40px !important;
+    }
+    .contactFlex{
+      width: 90% !important;
+    }
+    .scroll{
+      position: relative;
+      right: 20px;
+      bottom: 5px;
+    }
+    .pickText{
+      position: relative;
+      bottom: 50px;
+    }
+    .pickText3{
+      text-align: center;
+    }
+    .tabContent{
+      display: flex;
+      flex-direction: column!important;
+    }
+    .wrapperPick{
+      width: 90% !important;
+      flex-wrap: nowrap;
+    }
+    .ul_1{
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 20px;
+      text-align: center;
+      flex-wrap: inherit;
+
+    }
+    .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+
+      font-weight: normal;
+      font-size: 15px;
+      line-height: 20px;
+      text-align: center;
+      flex-wrap: inherit;
+    }
+    .ul_2{
+
+      height: 60px;
+      width: 100%;
+      white-space: normal
+    }
+    .tabContent{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .TabLeft {
+
+      width: 75% !important;
+    }
+    .tabPhoto {
+      width: 100% !important;
+    }
+    .imgTab {
+      left: -35px;
+    }
+    .numTab {
+      right: 40px !important;
+    }
+    .TabRight {
+
+      width: 100% !important;
+      height: 850px !important;
+    }
+    .tabText1 {
+      font-weight: normal !important;
+      margin-top: 150px;
+      font-size: 50px !important;
+    }
+    .tabButtonRight{
+      margin-left: 0% !important;
+    }
+    .aboutUsText1 {
+      font-weight: normal !important;
+      font-size: 55px !important;
+    }
+    .aboutUsG{
+      display: flex;
+      justify-content: center;
+      flex-direction: column!important;
+      align-items: center;
+    }
+    .aboutUsText{
+      width: 90% !important;
+    }
+    .aboutUsText {
+
+      align-items: center!important;
+    }
+    .aboutUsPhotos{
+      position: relative;
+      bottom: 100px;
+
+      width: 110% !important;
+    }
+    .PickTrip{
+      height: 5500px!important;
+    }
+
+    .thoughtsPeopleText1 {
+      font-size: 35px !important;
+      font-weight: normal !important;
+    }
+    .thoughtsPeopleText2 {
+      margin-top: 10px;
+      font-size: 15px !important;
+    }
+    .thoughtsPeopleBlocksRow {
+      flex-direction: column !important;
+    }
+    .tabButtonRight {
+      width: 100% !important;
+    }
+    .shareIT {
+      margin-bottom: 5px !important;
+    }
+    .shareIT0 {
+      position: relative;
+      left: 65% !important;
+      top: 50px;
+    }
+    .reviewsBlock {
+      height: 100% !important;
+      width: 90% !important;
+    }
+    .wrapperAboutUsG {
+      margin-top: 50px!important;
+    }
+
+    .thoughtsPeople{
+      margin-top: 0px;
+      width: 90% !important;
+      height: auto!important;
+      .thoughtsPeopleFlex{
+        height: 100%!important;
+        .thoughtsPeopleText{
+
+          height: 10% !important;
+        }
+        .thoughtsPeopleBlocks{
+          height: 90% !important;
+        }
+      }
+    }
+
+    .reviewsName{
+      height: auto;
+      width: 100% !important;
+    }
+    .seeText1{
+      margin-top: 100px;
+      font-size: 40px!important;
+    }
+    .seeText2{
+      width: 90% !important;
+      margin-top: 100px;
+      font-size: 20px!important;
+    }
+    .footer {
+      height: 1500px;
+
+      .footerFlex1 {
+        justify-content: center !important;
+        align-items: center !important;
+        text-align: center;
+        flex-direction: column !important;
+
+        .footerFlex {
+          margin-top: 40px;
+        }
+      }
+
+      .footerText2 {
+        font-size: 30px !important;
+        margin-bottom: 10px;
+      }
+    }
+    .navbarLogo2{
+      font-family: 'Noe Display', sans-serif;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 190%;
+
+      position: relative;
+
+
+      color: #FFFFFF;
+      margin-bottom: 150px;
+    }
+    .reviewsImage {
+      opacity: 0;
+      position: relative;
+      left: -45%;
+      top: 20px;
+    }
+    .dropdown-menu{
+
+    }
+    .dropdown-menu.show {
+
+      width: 400% !important;
+    }
+    .form-control{
+      position: relative;
+      top: 10px;
+      width: 100%!important;
+
+    }
+    .searcher{
+position: relative;
+      right: 10px;
+top:10px
+    }
+    .imgNavbar{
+
+    }
+    .navbar-toggler{
+      position: relative;
+left: 32px;
+
+    }
+    @keyframes slidein {
+      from {
+
+        margin-left: 115%;
+        width: 0%;
+      }
+
+      to {
+
+        width: 200%;
+      }
+    }
+  }
+
