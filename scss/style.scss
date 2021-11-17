@@ -103,6 +103,22 @@ background-color: rgba(0,0,0,0);
   right: 400px;
   bottom: 200px;
 }
+.dropdown-text2 {
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 31px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: 'Larsseit', sans-serif;
+  color: #FFFFFF;
+}
 .dropdown-text{
   margin: 5px;
 padding: 5px;
