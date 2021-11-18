@@ -1,3 +1,7 @@
+/*
+document.querySelector("#bb").addEventListener("click", function () {
 
-$('body').css('top', -(document.documentElement.scrollTop) + 'px')
-    .addClass('noscroll');
+    document.querySelector("#bb").setAttribute("aria-expanded","true")
+    console.log("he")
+})
+*/

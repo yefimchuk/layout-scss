@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-toggler.focus {
   border: 0px; }
 
-.navbar-toggler-icon {
+c-icon {
   width: 1.8em;
   height: 1.8em; }
 
@@ -111,15 +111,74 @@ h1, h2, h3, h4, h5, h6 {
 .btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show > .btn-secondary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0); }
 
+#dropdownMenuLink {
+  margin-right: 12px;
+  width: 100%; }
+
+.ddd {
+  width: 600% !important; }
+
 .dropdown-menu.show {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 0px !important;
   margin: 0px !important;
-  width: 500%;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0);
   border: 0px !important; }
+
+.dropdown-menu.show.b {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px !important;
+  margin: 0px !important;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px !important; }
+
+.dropleft-text {
+  margin: 10px;
+  position: relative;
+  right: 400px;
+  bottom: 200px; }
+
+.dropdown-text {
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: auto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 31px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  font-family: 'Larsseit', sans-serif;
+  animation-duration: 1s;
+  animation-name: slidein2;
+  color: #FFFFFF; }
+  .dropdown-text:hover {
+    background: #00C9E0;
+    opacity: 0.8;
+    border-radius: 4px;
+    font-weight: bold;
+    color: black; }
+@keyframes slidein2 {
+  from {
+    margin-top: -100px; }
+  to {
+    margin-top: 5px; } }
+.dropleft-text {
+  position: relative;
+  top: -10px;
+  display: flex;
+  flex-direction: row;
+  width: 400%; }
 
 @keyframes slidein {
   from {
@@ -138,14 +197,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .topPage {
   background: url("img/topImg.png") 50%/cover no-repeat;
-  height: 1100px;
+  height: auto;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
   .topPage .navbar {
-    width: 90%;
+    width: 100%;
     height: auto;
     display: flex;
     justify-content: space-between;
@@ -159,32 +218,29 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 36px;
       line-height: 190%;
       color: #FFFFFF; }
-    .topPage .navbar .navbar-menu {
-      display: flex;
-      flex-direction: row;
+    .topPage .navbar .navbar-expand-lg .navbar-collapse {
+      justify-content: flex-end !important; }
+    .topPage .navbar .navbar-menu .imgNavbar {
+      width: 25px;
+      height: 25px;
+      margin-right: 20px; }
+    .topPage .navbar .navbar-menu .navbarButtonMenu {
+      display: flex !important;
+      justify-content: center;
       align-items: center;
-      margin-left: 92%; }
-      .topPage .navbar .navbar-menu .imgNavbar {
-        width: 25px;
-        height: 25px;
-        margin-right: 20px; }
-      .topPage .navbar .navbar-menu .navbarButtonMenu {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 160px;
-        height: 50px;
-        background: #00C9E0;
-        box-shadow: 5px 15px 40px rgba(0, 201, 224, 0.2);
-        border-radius: 48px;
-        font-style: normal;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 21px;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        font-family: 'Larsseit', sans-serif;
-        color: #FFFFFF; }
+      width: 160px;
+      height: 50px;
+      background: #00C9E0;
+      box-shadow: 5px 15px 40px rgba(0, 201, 224, 0.2);
+      border-radius: 48px;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 21px;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-family: 'Larsseit', sans-serif;
+      color: #FFFFFF; }
   .topPage .TextTop {
     margin-top: 100px;
     width: 70%;
@@ -254,6 +310,8 @@ h1, h2, h3, h4, h5, h6 {
       .topPage .contact .contactIcons .iconCont {
         margin-top: 10px; }
   .topPage .navGrad {
+    position: relative;
+    top: 25px;
     height: 157px;
     width: 100%;
     background: linear-gradient(180deg, rgba(1, 22, 39, 0) 0%, #011627 76.64%, #011627 100%); }
@@ -1066,22 +1124,37 @@ h1, h2, h3, h4, h5, h6 {
   .form-control {
     position: relative;
     top: 10px;
-    width: 100% !important; }
+    width: 500% !important; }
+
+  .ddd {
+    width: 1000% !important; }
 
   .searcher {
     position: relative;
     right: 10px;
     top: 10px; }
 
-  .navbar-toggler {
-    position: relative;
-    left: 32px; }
-
   @keyframes slidein {
     from {
       margin-left: 115%;
       width: 0%; }
     to {
-      width: 200%; } } }
+      width: 200%; } }
+  .topPage .navbar {
+    margin-top: 15px;
+    width: 100% !important; }
+
+  #bb {
+    margin-left: 80%; }
+
+  .dropdown-text {
+    padding: 0px !important;
+    margin-top: 20px; }
+    .dropdown-text:hover {
+      background-color: rgba(0, 0, 0, 0);
+      color: white; } }
+@media (max-width: 1200px) {
+  .dropleft-text {
+    width: 280% !important; } }
 
 /*# sourceMappingURL=style.css.map */
