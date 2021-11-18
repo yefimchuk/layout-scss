@@ -1397,10 +1397,12 @@ top: -10px;
       width: 400% !important;
     }
     .form-control{
-      position: relative;
-      top: 10px;
+
       width: 500%!important;
 
+    }
+    a:hover{
+      color: white;
     }
     .ddd{
       width: 1000% !important;
@@ -1408,7 +1410,7 @@ top: -10px;
     .searcher{
 position: relative;
       right: 10px;
-top:10px
+
     }
     .imgNavbar{
 
@@ -1430,7 +1432,6 @@ top:10px
       }
     }
     .topPage .navbar{
-      margin-top: 15px;
       width: 100% !important;
 
     }

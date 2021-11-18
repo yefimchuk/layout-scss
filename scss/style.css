@@ -1138,17 +1138,17 @@ c-icon {
     width: 400% !important; }
 
   .form-control {
-    position: relative;
-    top: 10px;
     width: 500% !important; }
+
+  a:hover {
+    color: white; }
 
   .ddd {
     width: 1000% !important; }
 
   .searcher {
     position: relative;
-    right: 10px;
-    top: 10px; }
+    right: 10px; }
 
   @keyframes slidein {
     from {
@@ -1157,7 +1157,6 @@ c-icon {
     to {
       width: 200%; } }
   .topPage .navbar {
-    margin-top: 15px;
     width: 100% !important; }
 
   #bb {
