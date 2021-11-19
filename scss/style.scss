@@ -1057,8 +1057,7 @@ top: -10px;
     display: flex;
     justify-content: flex-start;
     align-items: baseline;
-    flex-direction: row;
-
+    flex-direction: column;
     width: 85%;
     background: #011627;
     height: 500px;
@@ -1116,8 +1115,7 @@ top: -10px;
     margin: 5px;
   }
   .copyright{
-    position: relative;
-    bottom:30px;
+margin-top: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1133,6 +1131,10 @@ top: -10px;
     color: #FFFFFF;
   }
   .navbarLogo2{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Noe Display', sans-serif;
     font-style: normal;
     font-weight: bold;
@@ -1352,7 +1354,7 @@ top: -10px;
       font-size: 20px!important;
     }
     .footer {
-      height: 1500px;
+      height: auto;
 
       .footerFlex1 {
         justify-content: center !important;
@@ -1381,7 +1383,7 @@ top: -10px;
 
 
       color: #FFFFFF;
-      margin-bottom: 150px;
+
     }
     .reviewsImage {
       opacity: 0;
@@ -1432,6 +1434,7 @@ position: relative;
       }
     }
     .topPage .navbar{
+
       width: 100% !important;
 
     }

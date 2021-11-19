@@ -847,7 +847,7 @@ c-icon {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
-  flex-direction: row;
+  flex-direction: column;
   width: 85%;
   background: #011627;
   height: 500px;
@@ -891,8 +891,7 @@ c-icon {
   margin: 5px; }
 
 .copyright {
-  position: relative;
-  bottom: 30px;
+  margin-top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -906,6 +905,10 @@ c-icon {
   color: #FFFFFF; }
 
 .navbarLogo2 {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: 'Noe Display', sans-serif;
   font-style: normal;
   font-weight: bold;
@@ -1106,7 +1109,7 @@ c-icon {
     font-size: 20px !important; }
 
   .footer {
-    height: 1500px; }
+    height: auto; }
     .footer .footerFlex1 {
       justify-content: center !important;
       align-items: center !important;
@@ -1125,8 +1128,7 @@ c-icon {
     font-size: 36px;
     line-height: 190%;
     position: relative;
-    color: #FFFFFF;
-    margin-bottom: 150px; }
+    color: #FFFFFF; }
 
   .reviewsImage {
     opacity: 0;
