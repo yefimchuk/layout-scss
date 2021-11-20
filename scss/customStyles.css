@@ -1,0 +1,36 @@
+.btn:focus {
+  border: 0px !important; }
+
+.btn-secondary {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px; }
+
+.show > .btn-secondary.dropdown-toggle {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px; }
+
+.btn-secondary.focus, .btn-secondary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0) !important; }
+
+.navbar-dark .navbar-toggler {
+  border: 0px solid red; }
+
+.navbar-toggler.focus {
+  border: 0px; }
+
+c-icon {
+  width: 1.8em;
+  height: 1.8em; }
+
+.btn-secondary:hover {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px; }
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle {
+  background-color: rgba(0, 0, 0, 0); }
+
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show > .btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0); }
+
+/*# sourceMappingURL=customStyles.css.map */

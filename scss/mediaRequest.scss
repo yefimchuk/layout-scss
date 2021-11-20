@@ -1,0 +1,255 @@
+@import "mixins.scss";
+@import "colors.scss";
+@import "customStyles.scss";
+@media (max-width: 550px) {
+  .TextTop {
+    width: 90% !important;
+  }
+  .TextTop1 {
+    font-size: 60px !important;
+    line-height: 60px !important;;
+  }
+  .TextTop2 {
+    font-size: 16px !important;
+    text-align: center;
+  }
+  .navGrad {
+    position: relative;
+    top: 5px;
+  }
+  .pickText {
+    display: flex;
+    flex-direction: column;
+  }
+  .pickText1 {
+    font-size: 40px !important;
+  }
+  .contactFlex {
+    width: 90% !important;
+  }
+  .scroll {
+    position: relative;
+    right: 20px;
+    bottom: 5px;
+  }
+  .pickText {
+    position: relative;
+    bottom: 50px;
+  }
+  .pickText3 {
+    text-align: center;
+  }
+  .tabContent {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .wrapperPick {
+    width: 90% !important;
+    flex-wrap: nowrap;
+  }
+  .ul_1 {
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    flex-wrap: inherit;
+
+  }
+  .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    flex-wrap: inherit;
+  }
+  .ul_2 {
+@include hw(60px,100%);
+    white-space: normal
+  }
+  .tabContent {
+    @include center;
+  }
+  .TabLeft {
+
+    width: 75% !important;
+  }
+  #bb{
+    margin-left: 80%;
+  }
+  .tabPhoto {
+    width: 100% !important;
+  }
+  .imgTab {
+    left: -40px;
+  }
+  .numTab {
+    right: 40px !important;
+  }
+  .TabRight {
+    width: 100% !important;
+    height: 850px !important;
+  }
+  .tabText1 {
+    font-weight: normal !important;
+    margin-top: 150px;
+    font-size: 50px !important;
+  }
+  .tabButtonRight {
+    @include hw(65px, 100%);
+    margin-left: 0% !important;
+  }
+  .aboutUsText1 {
+    font-weight: normal !important;
+    font-size: 55px !important;
+  }
+  .aboutUsG {
+  @include center;
+    flex-direction: column !important;
+  }
+  .aboutUsText {
+    width: 90% !important;
+  }
+  .aboutUsText {
+
+    align-items: center !important;
+  }
+  .aboutUsPhotos {
+    position: relative;
+    bottom: 100px;
+
+    width: 110% !important;
+  }
+  .PickTrip {
+    height: 5500px !important;
+  }
+
+  .thoughtsPeopleText1 {
+    font-size: 35px !important;
+    font-weight: normal !important;
+  }
+  .thoughtsPeopleText2 {
+    margin-top: 10px;
+    font-size: 15px !important;
+  }
+  .thoughtsPeopleBlocksRow {
+    flex-direction: column !important;
+  }
+  .tabButtonRight {
+    width: 100% !important;
+  }
+  .shareIT {
+    margin-bottom: 5px !important;
+  }
+  .shareIT0 {
+    position: relative;
+    left: 65% !important;
+    top: 50px;
+  }
+  .reviewsBlock {
+    height: 100% !important;
+    width: 90% !important;
+  }
+  .wrapperAboutUsG {
+    margin-top: 50px !important;
+  }
+
+  .thoughtsPeople {
+    margin-top: 0px;
+    width: 90% !important;
+    height: auto !important;
+
+    .thoughtsPeopleFlex {
+      height: 100% !important;
+
+      .thoughtsPeopleText {
+
+        height: 10% !important;
+      }
+
+      .thoughtsPeopleBlocks {
+        height: 90% !important;
+      }
+    }
+  }
+
+  .reviewsName {
+    height: auto;
+    width: 100% !important;
+  }
+  .seeText1 {
+    margin-top: 100px;
+    font-size: 40px !important;
+  }
+  .seeText2 {
+    width: 90% !important;
+    margin-top: 100px;
+    font-size: 20px !important;
+  }
+  .footer {
+    height: auto;
+
+    .footerFlex1 {
+      justify-content: center !important;
+      align-items: center !important;
+      text-align: center;
+      flex-direction: column !important;
+
+      .footerFlex {
+        margin-top: 40px;
+      }
+    }
+
+    .footerText2 {
+      font-size: 30px !important;
+      margin-bottom: 10px;
+    }
+  }
+  .navbarLogo2 {
+    font-family: 'Noe Display', sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 190%;
+
+    position: relative;
+
+
+    color: $w;
+
+  }
+  .reviewsImage {
+    opacity: 0;
+    position: relative;
+    left: -45%;
+    top: 20px;
+  }
+  .dropdown-menu {
+
+  }
+  .dropdown-menu.show {
+
+    width: 400% !important;
+  }
+  .form-control {
+
+    width: 500% !important;
+
+  }
+  a:hover {
+    color: $w;
+  }
+
+  .searcher {
+    position: relative;
+    right: 10px;
+
+  }
+
+}
+
+@media (max-width: 1200px) {
+  .dropleft-text {
+    width: 280% !important;
+  }
+}
