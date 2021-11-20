@@ -1,0 +1,25 @@
+
+@keyframes slidein2 {
+  from {
+
+    margin-top: -100px;
+  }
+
+  to {
+
+    margin-top: 5px;
+  }
+}
+
+@keyframes slidein {
+  from {
+
+    margin-left: 115%;
+    width: 0%;
+  }
+
+  to {
+
+    width: 100%;
+  }
+}

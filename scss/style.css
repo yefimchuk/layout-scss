@@ -90,7 +90,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-toggler.focus {
   border: 0px; }
 
-c-icon {
+.c-icon {
   width: 1.8em;
   height: 1.8em; }
 
@@ -99,23 +99,50 @@ c-icon {
   background-color: rgba(0, 0, 0, 0);
   border: 0px; }
 
-.form-control {
-  width: 100%;
-  height: 40px;
-  animation-duration: 1s;
-  animation-name: slidein; }
-
 .btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle {
   background-color: rgba(0, 0, 0, 0); }
 
 .btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show > .btn-secondary.dropdown-toggle:focus {
   box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0); }
 
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  width: 100%;
+  height: 60px;
+  border: 0px;
+  background: rgba(0, 0, 0, 0);
+  border-bottom: 4px solid #41EAD4 !important;
+  font-family: 'Larsseit';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 200%;
+  opacity: 1;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #41EAD4; }
+
+@keyframes slidein2 {
+  from {
+    margin-top: -100px; }
+  to {
+    margin-top: 5px; } }
+@keyframes slidein {
+  from {
+    margin-left: 115%;
+    width: 0%; }
+  to {
+    width: 100%; } }
+.form-control {
+  height: 40px;
+  width: 100%;
+  animation-duration: 1s;
+  animation-name: slidein; }
+
 #dropdownMenuLink {
   margin-right: 12px;
   width: 100%; }
 
-.ddd {
+.searcherWidth {
   width: 600% !important; }
 
 .dropdown-menu.show {
@@ -149,8 +176,8 @@ c-icon {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 100%;
   height: auto;
+  width: 100%;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -166,8 +193,8 @@ c-icon {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  width: 100%;
   height: auto;
+  width: 100%;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -184,11 +211,7 @@ c-icon {
     border-radius: 4px;
     font-weight: bold;
     color: black; }
-@keyframes slidein2 {
-  from {
-    margin-top: -100px; }
-  to {
-    margin-top: 5px; } }
+
 .dropleft-text {
   position: relative;
   top: -10px;
@@ -196,12 +219,6 @@ c-icon {
   flex-direction: row;
   width: 400%; }
 
-@keyframes slidein {
-  from {
-    margin-left: 115%;
-    width: 0%; }
-  to {
-    width: 100%; } }
 .img-fluid {
   max-width: 1000%; }
 
@@ -212,23 +229,23 @@ c-icon {
   background-color: rgba(0, 0, 0, 0) !important; }
 
 .topPage {
-  background: url("img/topImg.png") 50%/cover no-repeat;
+  background: url("img/topImg.webp") 50%/cover no-repeat;
   height: auto;
   width: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column; }
   .topPage .navbar {
-    width: 100%;
     height: auto;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center; }
     .topPage .navbar .navbarLogo {
       position: relative;
       top: 0px;
-      font-family: 'Noe Display';
+      font-family: 'Noe Display',sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 36px;
@@ -237,36 +254,36 @@ c-icon {
     .topPage .navbar .navbar-expand-lg .navbar-collapse {
       justify-content: flex-end !important; }
     .topPage .navbar .navbar-menu .imgNavbar {
-      width: 25px;
       height: 25px;
+      width: 25px;
       margin-right: 20px; }
     .topPage .navbar .navbar-menu .navbarButtonMenu {
-      display: flex !important;
+      display: flex;
       justify-content: center;
       align-items: center;
-      width: 160px;
       height: 50px;
+      width: 160px;
       background: #00C9E0;
       box-shadow: 5px 15px 40px rgba(0, 201, 224, 0.2);
       border-radius: 48px;
       font-style: normal;
       font-weight: bold;
-      font-size: 16px;
+      font-size: 20px;
       line-height: 21px;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       font-family: 'Larsseit', sans-serif;
       color: #FFFFFF; }
   .topPage .TextTop {
-    margin-top: 100px;
+    height: 300px;
     width: 70%;
-    height: 300px; }
+    margin-top: 100px; }
     .topPage .TextTop .TextTop1 {
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
-      font-family: 'Noe Display', sans-serif;
+      font-family: 'Noe Display',sans-serif;
       font-style: normal;
       font-size: 120px;
       line-height: 153px;
@@ -275,6 +292,7 @@ c-icon {
     .topPage .TextTop .TextTop2 {
       display: flex;
       justify-content: center;
+      align-items: center;
       width: 100%;
       font-family: 'Larsseit', sans-serif;
       font-style: normal;
@@ -287,7 +305,7 @@ c-icon {
       padding: 25px; }
     .topPage .TextTop .TextTop3 {
       width: 100%;
-      font-family: 'Larsseit';
+      font-family: 'Larsseit', sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 17px;
@@ -295,34 +313,33 @@ c-icon {
       text-align: center;
       color: #FFFFFF; }
   .topPage .contact {
-    width: 90%;
     height: 200px;
+    width: 90%;
     margin-top: 200px; }
     .topPage .contact .scroll {
       display: flex;
-      flex-direction: column;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      flex-direction: column; }
       .topPage .contact .scroll .scrollText {
-        font-family: 'Larsseit';
+        font-family: 'Larsseit', sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 15px;
         line-height: 190%;
-        /* or 28px */
         letter-spacing: 0.05em;
         color: #FFFFFF;
         opacity: 0.9;
         transform: rotate(-90deg); }
       .topPage .contact .scroll .scrollArrow {
         margin-top: 25px;
-        width: 2px;
         height: 80px;
+        width: 2px;
         background: linear-gradient(180deg, #09F4F4 0%, #00C9E0 100%);
         border-radius: 13px; }
     .topPage .contact .contactIcons {
-      width: 22px;
-      height: 18px; }
+      height: 18px;
+      width: 22px; }
       .topPage .contact .contactIcons .iconCont {
         margin-top: 10px; }
   .topPage .navGrad {
@@ -335,21 +352,21 @@ c-icon {
 .PickTrip {
   position: relative;
   z-index: 1;
-  width: 100%;
   height: 4000px;
+  width: 100%;
   border: 0px; }
   .PickTrip .bg-light {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-    align-items: center;
     height: 100%;
     width: 100%;
-    background: url("img/bgLight.png") 0 0/cover no-repeat;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    background: url("img/bgLight.webp") 0 0/cover no-repeat;
     background-color: #011627 !important; }
     .PickTrip .bg-light .wrapperPick {
-      width: 70%;
       height: 50%;
+      width: 70%;
       margin-top: 100px; }
       .PickTrip .bg-light .wrapperPick .pickText {
         width: 100%;
@@ -372,12 +389,11 @@ c-icon {
           margin: 10px;
           border-radius: 0px; }
         .PickTrip .bg-light .wrapperPick .pickText .pickText3 {
-          font-family: 'Larsseit';
+          font-family: 'Larsseit', sans-serif;
           font-style: normal;
           font-weight: normal;
           font-size: 16px;
           line-height: 150%;
-          /* or 24px */
           letter-spacing: -0.02em;
           color: #FFFFFF; }
 
@@ -389,7 +405,7 @@ c-icon {
 
 .nav-tabs .nav-link {
   width: 100%;
-  color: white; }
+  color: #FFFFFF; }
 
 .ul_1 {
   display: flex;
@@ -398,42 +414,26 @@ c-icon {
   flex-direction: row;
   margin-top: 70px; }
 
-.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
-  width: 100%;
-  height: 60px;
-  border: 0px;
-  background: rgba(0, 0, 0, 0);
-  border-bottom: 4px solid #41EAD4 !important;
-  font-family: 'Larsseit';
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 200%;
-  opacity: 1;
-  text-align: center;
-  letter-spacing: -0.02em;
-  color: #41EAD4; }
-
 .ul_1 {
-  width: 100%;
   height: 60px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   border: 0px !important;
-  font-family: 'Larsseit';
+  font-family: 'Larsseit', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 110%;
   text-align: center;
   letter-spacing: -0.02em;
-  color: white;
+  color: #FFFFFF;
   opacity: 0.5;
   border-bottom: 1px solid white !important;
   transition: .1s linear; }
   .ul_1:hover {
-    color: white;
+    color: #FFFFFF;
     opacity: 1; }
 
 .ul_2 {
@@ -446,34 +446,34 @@ c-icon {
   display: flex;
   flex-direction: row; }
   .tabContent .TabLeft {
-    width: 50%;
-    height: 600px; }
+    height: 600px;
+    width: 50%; }
     .tabContent .TabLeft .tabPhoto {
+      height: 607px;
+      width: 75%;
       position: relative;
       display: flex;
       flex-direction: row;
       justify-content: flex-end;
       align-items: flex-end;
-      background-image: url("img/tab.png");
+      background-image: url("img/tab.webp");
       background-repeat: no-repeat;
       background-size: cover;
-      width: 75%;
-      height: 607px;
       border-radius: 10px;
       z-index: 2; }
       .tabContent .TabLeft .tabPhoto .arrow {
         display: flex;
-        flex-direction: row;
         justify-content: center;
         align-items: center;
+        flex-direction: row;
         border-radius: 10px; }
         .tabContent .TabLeft .tabPhoto .arrow .arrow1 {
           display: flex;
-          flex-direction: row;
           justify-content: center;
           align-items: center;
-          width: 65px;
           height: 65px;
+          width: 65px;
+          flex-direction: row;
           background: #011627;
           box-shadow: -10px 14px 24px rgba(1, 22, 39, 0.08);
           transform: rotate(-180deg);
@@ -481,11 +481,11 @@ c-icon {
           border-radius: 13% 0% 0%; }
         .tabContent .TabLeft .tabPhoto .arrow .arrow2 {
           display: flex;
-          flex-direction: row;
           justify-content: center;
           align-items: center;
-          width: 65px;
           height: 65px;
+          width: 65px;
+          flex-direction: row;
           background: #011627;
           box-shadow: -10px 14px 24px rgba(1, 22, 39, 0.08);
           transform: rotate(-180deg);
@@ -501,38 +501,35 @@ c-icon {
       right: 94px;
       z-index: 3; }
       .tabContent .TabLeft .numTab .numTab1 {
-        width: 200px;
         height: 20px;
+        width: 200px;
         border-left: 2px solid #41EAD4;
         border-top: 2px solid #41EAD4; }
       .tabContent .TabLeft .numTab .numTab2 {
-        font-family: 'Larsseit';
+        font-family: 'Larsseit', sans-serif;
         font-style: normal;
         font-weight: 800;
         font-size: 24px;
         line-height: 150%;
-        /* or 36px */
         letter-spacing: 0.15em;
         color: #41EAD4; }
       .tabContent .TabLeft .numTab .numTab3 {
         width: 250px;
-        font-family: 'Larsseit';
+        font-family: 'Larsseit', sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
         line-height: 150%;
-        /* or 36px */
         letter-spacing: 0.15em;
         color: #FFFFFF;
         margin-top: 10px; }
   .tabContent .TabRight {
-    width: 50%;
     height: 600px;
     width: 50%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: flex-start; }
+    align-items: flex-start;
+    flex-direction: column; }
     .tabContent .TabRight .tabText1 {
       font-family: 'Noe Display', sans-serif;
       font-style: normal;
@@ -548,18 +545,16 @@ c-icon {
       font-weight: 700;
       font-size: 17px;
       line-height: 150%;
-      /* or 25px */
       margin-top: 30px;
       letter-spacing: -0.02em;
       color: #FFFFFF;
       margin-left: 6%; }
     .tabContent .TabRight .tabText3 {
-      font-family: 'Larsseit';
+      font-family: 'Larsseit', sans-serif;
       font-style: normal;
       font-weight: 400;
       font-size: 17px;
       line-height: 150%;
-      /* or 25px */
       margin-top: 30px;
       letter-spacing: -0.02em;
       color: #FFFFFF;
@@ -568,19 +563,18 @@ c-icon {
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 282px;
       height: 65px;
+      width: 287px;
       background: #00C9E0;
       box-shadow: 5px 15px 40px rgba(0, 201, 224, 0.2);
       border-radius: 183px;
       margin-top: 40px;
       margin-left: 6%;
-      font-family: 'Larsseit';
+      font-family: 'Larsseit', sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 14px;
       line-height: 190%;
-      /* identical to box height, or 27px */
       letter-spacing: 0.15em;
       text-transform: uppercase;
       color: #FFFFFF; }
@@ -589,33 +583,33 @@ c-icon {
       left: 90%;
       top: 50px; }
     .tabContent .TabRight .contact3 {
-      width: 23px;
       height: 23px;
+      width: 23px;
       margin: 5px; }
 
 .aboutUs {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #011627 50%);
-  width: 100%;
-  height: 100%; }
+  height: 100%;
+  width: 100%; }
   .aboutUs .wrapperAboutUs {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100%;
+    width: 100%;
     flex-direction: column;
     opacity: 1;
-    width: 100%;
-    height: 100%;
-    background-image: url("img/Imagebg.png");
+    background-image: url("../scss/img/Imagebg.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top; }
     .aboutUs .wrapperAboutUs .wrapperAboutUsG {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin-top: 250px;
       width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center; }
+      flex-direction: row; }
       .aboutUs .wrapperAboutUs .wrapperAboutUsG .aboutUsG {
         width: 90%;
         display: flex;
@@ -625,9 +619,9 @@ c-icon {
         .aboutUs .wrapperAboutUs .wrapperAboutUsG .aboutUsG .aboutUsPhotos {
           width: 60%; }
         .aboutUs .wrapperAboutUs .wrapperAboutUsG .aboutUsG .aboutUsText {
-          margin-bottom: 200px;
           height: 100%;
           width: 30%;
+          margin-bottom: 200px;
           display: flex;
           flex-direction: column;
           justify-content: flex-start;
@@ -642,7 +636,7 @@ c-icon {
             letter-spacing: -0.02em;
             color: #FFFFFF; }
           .aboutUs .wrapperAboutUs .wrapperAboutUsG .aboutUsG .aboutUsText .aboutUsText2 {
-            font-family: 'Larsseit';
+            font-family: 'Larsseit', sans-serif;
             font-size: 18px;
             font-weight: 700;
             line-height: 27px;
@@ -660,21 +654,19 @@ c-icon {
             color: #FFFFFF; }
           .aboutUs .wrapperAboutUs .wrapperAboutUsG .aboutUsG .aboutUsText .aboutUsButton {
             margin-top: 50px;
-            font-family: 'Larsseit';
+            font-family: 'Larsseit', sans-serif;
             font-style: normal;
             font-weight: bold;
             font-size: 14px;
             line-height: 190%;
-            /* identical to box height, or 27px */
             letter-spacing: 0.15em;
             text-transform: uppercase;
             color: #FFFFFF;
-            width: 282px;
             height: 65px;
+            width: 100%;
             background: #00C9E0;
             box-shadow: 5px 15px 40px rgba(0, 201, 224, 0.2);
-            border-radius: 183px;
-            color: #FFFFFF; }
+            border-radius: 183px; }
 
 .aboutUsPhotosFlex {
   width: 50%;
@@ -688,77 +680,76 @@ c-icon {
     justify-content: space-between;
     align-items: center; }
     .aboutUsPhotosFlex .aboutUsPhotosFlex1 .aboutUsImg {
-      width: 100%;
-      height: auto; }
+      height: auto;
+      width: 100%; }
   .aboutUsPhotosFlex .aboutUsPhotosFlex2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center; }
     .aboutUsPhotosFlex .aboutUsPhotosFlex2 .aboutUsImg {
-      width: 100%;
-      height: auto; }
+      height: auto;
+      width: 100%; }
 
 .thoughtsPeople {
+  height: 1500px;
   width: 85%;
-  margin-top: 250px;
   display: flex;
-  border-radius: 8px;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 85%;
-  height: 1500px; }
+  flex-direction: column;
+  margin-top: 250px;
+  border-radius: 8px; }
   .thoughtsPeople .thoughtsPeopleFlex {
     background: #011627;
-    width: 100%;
     height: 100%;
+    width: 100%;
     border-radius: 7px; }
     .thoughtsPeople .thoughtsPeopleFlex .thoughtsPeopleText {
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
-      width: 100%;
-      height: 20%; }
+      flex-direction: column;
+      height: 20%;
+      width: 100%; }
       .thoughtsPeople .thoughtsPeopleFlex .thoughtsPeopleText .thoughtsPeopleText1 {
         font-family: 'Noe Display', sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 72px;
         line-height: 110%;
-        /* or 79px */
         text-align: center;
         letter-spacing: -0.02em;
         color: #FFFFFF; }
       .thoughtsPeople .thoughtsPeopleFlex .thoughtsPeopleText .thoughtsPeopleText2 {
-        font-family: 'Larsseit';
+        font-family: 'Larsseit', sans-serif;
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
         line-height: 150%;
-        /* or 36px */
         text-align: center;
         letter-spacing: 0.15em;
         color: #FFFFFF; }
   .thoughtsPeople .thoughtsPeopleBlocks {
-    margin-bottom: 100px;
+    height: 80%;
+    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 80%;
-    width: 100%; }
+    margin-bottom: 100px;
+    flex-direction: column; }
     .thoughtsPeople .thoughtsPeopleBlocks .thoughtsPeopleBlocksRow {
       display: flex;
-      flex-direction: row;
       justify-content: center;
-      align-items: center; }
+      align-items: center;
+      flex-direction: row; }
       .thoughtsPeople .thoughtsPeopleBlocks .thoughtsPeopleBlocksRow .reviewsBlock {
         display: flex;
-        flex-direction: column;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+        height: 504;
+        width: 35%;
         width: 35%;
         height: 504px;
         background: #02223B;
@@ -767,7 +758,7 @@ c-icon {
         margin: 15px; }
         .thoughtsPeople .thoughtsPeopleBlocks .thoughtsPeopleBlocksRow .reviewsBlock .reviewsBlockText1 {
           width: 80%;
-          font-family: 'Larsseit';
+          font-family: 'Larsseit', sans-serif;
           font-style: normal;
           font-weight: 700;
           font-size: 18px;
@@ -776,7 +767,7 @@ c-icon {
         .thoughtsPeople .thoughtsPeopleBlocks .thoughtsPeopleBlocksRow .reviewsBlock .reviewsBlockText2 {
           margin-top: 20px;
           width: 80%;
-          font-family: 'Larsseit';
+          font-family: 'Larsseit', sans-serif;
           font-style: normal;
           font-weight: 300;
           font-size: 18px;
@@ -788,15 +779,16 @@ c-icon {
           .thoughtsPeople .thoughtsPeopleBlocks .thoughtsPeopleBlocksRow .reviewsBlock .reviewsBlockAvatar .reviewsBlockName {
             width: 100%; }
             .thoughtsPeople .thoughtsPeopleBlocks .thoughtsPeopleBlocksRow .reviewsBlock .reviewsBlockAvatar .reviewsBlockName .reviewsName {
+              display: flex;
+              justify-content: center;
+              align-items: center;
               margin-left: 20px;
               width: 100%;
-              display: flex;
-              font-family: Larsseit;
+              font-family: 'Larsseit', sans-serif;
               font-style: normal;
               font-weight: bold;
               font-size: 12px;
               line-height: 170%;
-              align-items: center;
               letter-spacing: 0.15em;
               text-transform: uppercase;
               color: #FFFFFF; }
@@ -805,35 +797,33 @@ c-icon {
   width: 85%;
   background: #011627;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  flex-direction: column; }
   .seeText .seeText1 {
     font-family: 'Noe Display', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 72px;
     line-height: 110%;
-    /* or 79px */
     text-align: center;
     letter-spacing: -0.02em;
     color: #FFFFFF; }
   .seeText .seeText2 {
     margin-top: 20px;
     width: 388px;
-    font-family: 'Larsseit';
+    font-family: 'Larsseit', sans-serif;
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
     line-height: 150%;
-    /* or 36px */
     text-align: center;
     letter-spacing: 0.07em;
     color: #FFFFFF; }
   .seeText .seeT {
     margin-top: 120px;
-    width: 2px;
     height: 80px;
+    width: 2px;
     background: linear-gradient(180deg, #09F4F4 0%, #00C9E0 100%);
     border-radius: 13px; }
 
@@ -843,14 +833,15 @@ c-icon {
   top: 20px; }
 
 .footer {
-  margin-top: 70px;
+  height: 500px;
+  width: 85%;
   display: flex;
   justify-content: flex-start;
-  align-items: baseline;
+  align-items: center;
   flex-direction: column;
-  width: 85%;
+  align-items: baseline;
+  margin-top: 70px;
   background: #011627;
-  height: 500px;
   color: #FFFFFF; }
   .footer .footerFlex1 {
     width: 80%;
@@ -859,17 +850,16 @@ c-icon {
     align-items: flex-start;
     justify-content: space-between; }
     .footer .footerFlex1 .footerFlex .footerText2 {
-      font-family: 'Larsseit';
+      font-family: 'Larsseit', sans-serif;
       font-style: normal;
       font-weight: bold;
       font-size: 18px;
       line-height: 24px;
-      /* identical to box height */
       text-transform: uppercase;
       color: #FFFFFF; }
     .footer .footerFlex1 .footerFlex .footerText3 {
       margin-top: 15px;
-      font-family: 'Larsseit';
+      font-family: 'Larsseit', sans-serif;
       font-style: normal;
       font-weight: normal;
       font-size: 15px;
@@ -877,17 +867,17 @@ c-icon {
       color: #FFFFFF; }
 
 .shareIT1 {
+  height: 34px;
+  width: 127px;
   position: relative;
   bottom: 20px;
   right: 10px;
-  width: 127px;
-  height: 34px;
   border-bottom: 2px solid #41EAD4;
   border-right: 2px solid #41EAD4; }
 
 .contact3 {
-  width: 20px;
   height: 20px;
+  width: 20px;
   margin: 5px; }
 
 .copyright {
@@ -895,12 +885,11 @@ c-icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Larsseit';
+  font-family: 'Larsseit', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
   line-height: 25px;
-  /* identical to box height, or 167% */
   text-align: center;
   color: #FFFFFF; }
 
@@ -920,7 +909,7 @@ c-icon {
 
 .shareIT {
   margin-bottom: 20px;
-  font-family: "Larsseit";
+  font-family: 'Larsseit', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 15px;
@@ -929,13 +918,64 @@ c-icon {
   color: #FFFFFF; }
 
 .shareIT1 {
+  height: 34px;
+  width: 117px;
   position: relative;
   bottom: 20px;
   right: 10px;
-  width: 117px;
-  height: 34px;
   border-bottom: 2px solid #41EAD4;
   border-right: 2px solid #41EAD4; }
+
+.btn:focus {
+  border: 0px !important; }
+
+.btn-secondary {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px; }
+
+.show > .btn-secondary.dropdown-toggle {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px; }
+
+.btn-secondary.focus, .btn-secondary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0) !important; }
+
+.navbar-dark .navbar-toggler {
+  border: 0px solid red; }
+
+.navbar-toggler.focus {
+  border: 0px; }
+
+.c-icon {
+  width: 1.8em;
+  height: 1.8em; }
+
+.btn-secondary:hover {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px; }
+
+.btn-secondary:not(:disabled):not(.disabled).active, .btn-secondary:not(:disabled):not(.disabled):active, .show > .btn-secondary.dropdown-toggle {
+  background-color: rgba(0, 0, 0, 0); }
+
+.btn-secondary:not(:disabled):not(.disabled).active:focus, .btn-secondary:not(:disabled):not(.disabled):active:focus, .show > .btn-secondary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0); }
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  width: 100%;
+  height: 60px;
+  border: 0px;
+  background: rgba(0, 0, 0, 0);
+  border-bottom: 4px solid #41EAD4 !important;
+  font-family: 'Larsseit';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 200%;
+  opacity: 1;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #41EAD4; }
 
 @media (max-width: 550px) {
   .TextTop {
@@ -1010,11 +1050,14 @@ c-icon {
   .TabLeft {
     width: 75% !important; }
 
+  #bb {
+    margin-left: 80%; }
+
   .tabPhoto {
     width: 100% !important; }
 
   .imgTab {
-    left: -35px; }
+    left: -40px; }
 
   .numTab {
     right: 40px !important; }
@@ -1029,6 +1072,8 @@ c-icon {
     font-size: 50px !important; }
 
   .tabButtonRight {
+    height: 65px;
+    width: 100%;
     margin-left: 0% !important; }
 
   .aboutUsText1 {
@@ -1038,8 +1083,8 @@ c-icon {
   .aboutUsG {
     display: flex;
     justify-content: center;
-    flex-direction: column !important;
-    align-items: center; }
+    align-items: center;
+    flex-direction: column !important; }
 
   .aboutUsText {
     width: 90% !important; }
@@ -1143,33 +1188,11 @@ c-icon {
     width: 500% !important; }
 
   a:hover {
-    color: white; }
-
-  .ddd {
-    width: 1000% !important; }
+    color: #FFFFFF; }
 
   .searcher {
     position: relative;
-    right: 10px; }
-
-  @keyframes slidein {
-    from {
-      margin-left: 115%;
-      width: 0%; }
-    to {
-      width: 200%; } }
-  .topPage .navbar {
-    width: 100% !important; }
-
-  #bb {
-    margin-left: 80%; }
-
-  .dropdown-text {
-    padding: 0px !important;
-    margin-top: 20px; }
-    .dropdown-text:hover {
-      background-color: rgba(0, 0, 0, 0);
-      color: white; } }
+    right: 10px; } }
 @media (max-width: 1200px) {
   .dropleft-text {
     width: 280% !important; } }

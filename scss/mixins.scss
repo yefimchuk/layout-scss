@@ -1,0 +1,29 @@
+@mixin hw ($height,$width) {
+  height: $height;
+  width: $width;
+}
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin startRow {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+@mixin startCol {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+@mixin endRow {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+@mixin endCol {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
